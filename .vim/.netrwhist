@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/etc/lighttpd/conf-enabled'
+let g:netrw_dirhist_2='/etc/zookeeper/conf'
+let g:netrw_dirhist_3='/etc/zookeeper/zooinspector'
+let g:netrw_dirhist_4='/www/vhosts/bigdata.vivo2.com/public/library/DrSlump/Protobuf'
+let g:netrw_dirhist_5='/www/vhosts/bigdata.vivo2.com/phpclient2'

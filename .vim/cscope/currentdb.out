@@ -1,0 +1,2523 @@
+cscope 15 /www/vhosts/backend.vivo2.com               0000020347
+	@/www/vhosts/backend.vivo2.com/application/Bootstrap.php
+
+1 <?
+php
+
+
+12 þas 
+	cBoÙ¡¿p
+ 
+ex‹nds
+ 
+	mZ’d_AµliÿtiÚ_BoÙ¡¿p_BoÙ¡¿p
+
+
+20 
+´Ùeùed
+ 
+funùiÚ
+ 
+	$_š™AutÞßd
+()
+
+23 
+$this
+->
+	`boÙ¡¿p
+('frontController');
+
+24 
+$this
+->
+_äÚt
+ = $this->
+	`g‘Resourû
+('frontController');
+
+25 
+$autoLßd”
+ = 
+Z’d_Lßd”_AutÞßd”
+::
+	`g‘In¡ªû
+();
+
+27 
+Z’d_CÚŒÞËr_AùiÚ_H–³rBrok”
+::
+	`addP»fix
+('Core_Controller_Action_Helper');
+
+29  
+$autoLßd”
+;
+
+37 
+´Ùeùed
+ 
+funùiÚ
+ 
+	$_š™AutÞßdAµliÿtiÚResourûs
+()
+
+40 
+Ãw
+ 
+	`Z’d_Lßd”_AutÞßd”_Resourû
+(
+	`¬¿y
+(
+
+41 'ba£P©h' => 
+APPLICATION_PATH
+,
+
+43 '»sourûTy³s' => 
+	`¬¿y
+(
+
+44 'fÜm' => 
+	`¬¿y
+(
+
+48 'mod–' => 
+	`¬¿y
+(
+
+52 '¶ugš' => 
+	`¬¿y
+(
+
+56 '£rviû' => 
+	`¬¿y
+(
+
+60 '£rviû¶ugš' => 
+	`¬¿y
+(
+
+68 
+	}
+}
+
+74 
+´Ùeùed
+ 
+funùiÚ
+ 
+	$_š™CÚŒÞËrDœeùÜy
+()
+
+76 
+$this
+->
+	`boÙ¡¿p
+('frontController');
+
+77 
+$äÚt
+ = 
+Z’d_CÚŒÞËr_FrÚt
+::
+	`g‘In¡ªû
+();
+
+78 
+$äÚt
+->
+	`£tCÚŒÞËrDœeùÜy
+(
+APPLICATION_PATH
+ . '/controllers');
+
+79 
+	}
+}
+
+86 
+´Ùeùed
+ 
+funùiÚ
+ 
+	$_š™S‘CÚ¡ªts
+()
+
+88 
+$¬rCÚ¡ªts
+ = 
+$this
+->
+	`g‘O±iÚ
+("constant");
+
+89 
+	`fÜ—ch
+Ð
+$¬rCÚ¡ªts
+ 
+as
+ 
+$¡rName
+ => 
+$¡rV®ue
+ ){
+
+90 ifÐ! 
+	`defšed
+Ð
+$¡rName
+ ) ) {
+
+91 
+	`defše
+Ð
+$¡rName
+, 
+$¡rV®ue
+ );
+
+94 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/public/index.php
+
+1 <?
+php
+
+
+4 
+defšed
+('BASE_PATH')
+
+5 || 
+defše
+('BASE_PATH', 
+»®·th
+(
+dœÇme
+(
+__FILE__
+) . '/../'));
+
+8 
+defšed
+('APPLICATION_PATH')
+
+9 || 
+defše
+('APPLICATION_PATH', 
+BASE_PATH
+ . 
+DIRECTORY_SEPARATOR
+ . 'application');
+
+11 
+defšed
+('APPLICATION_ENV')
+
+12 || 
+defše
+('APPLICATION_ENV', (
+g‘’v
+('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'development'));
+
+14 
+defše
+('DS', 
+DIRECTORY_SEPARATOR
+);
+
+16 
+£t_šþude_·th
+(
+
+17 
+DS
+ . 'u¤' .DS. 'sh¬e' . DS . 'php' . DS . 'Z’dF¿mewÜk' . 
+PATH_SEPARATOR
+ .
+
+18 
+DS
+ . 'u¤' . 'sh¬e' . DS . 'php' . DS . 'Z’dF¿mewÜk' .DS . 'lib¿ry' . 
+PATH_SEPARATOR
+ .
+
+19 
+DS
+ . 'u¤' .DS. 'sh¬e'.DS.'php'.DS.'Z’dF¿mewÜk'.DS.'exŒas'.DS.'lib¿ry' . 
+PATH_SEPARATOR
+ .
+
+20 
+BASE_PATH
+ . 
+DIRECTORY_SEPARATOR
+ . 'lib¿ry' . 
+PATH_SEPARATOR
+ .
+
+21 
+g‘_šþude_·th
+()
+
+25 
+	g»quœe_Úû
+ 'Zend/Application.php';
+
+26 
+	g»quœe_Úû
+ 'Zend/Config/Ini.php';
+
+27 
+	g»quœe_Úû
+ 'Zend/Cache.php';
+
+29 ià(
+	gAPPLICATION_ENV
+ == 'production') {
+
+30 
+$äÚ‹ndO±iÚs
+ = 
+¬¿y
+('autom©ic_£rŸliz©iÚ' => 
+Œue
+);
+
+31 
+	g$back’dO±iÚs
+ = 
+¬¿y
+('ÿche_dœ' => 
+BASE_PATH
+ . '/data/cache');
+
+32 
+	g$ÿche
+ = 
+Z’d_Cache
+::
+çùÜy
+('CÜe', 'Fže', 
+$äÚ‹ndO±iÚs
+, 
+$back’dO±iÚs
+);
+
+34 ià(!(
+	g$cÚfig
+ = 
+$ÿche
+->
+lßd
+('config'))) {
+
+35 
+$cÚfig
+ = 
+g‘CÚfig
+();
+
+38 
+	g$ÿche
+->
+§ve
+(
+$cÚfig
+, 'config');
+
+40 
+	g$cÚfig
+ = 
+g‘CÚfig
+();
+
+44 
+	g$­¶iÿtiÚ
+ = 
+Ãw
+ 
+Z’d_AµliÿtiÚ
+(
+APPLICATION_ENV
+, 
+$cÚfig
+);
+
+45 
+	g$­¶iÿtiÚ
+->
+boÙ¡¿p
+()->
+run
+();
+
+52 
+funùiÚ
+ 
+	$g‘CÚfig
+()
+
+54 
+$cÚfigP©h
+ = 
+APPLICATION_PATH
+ . 
+DIRECTORY_SEPARATOR
+ . 'configs';
+
+56 
+$cÚfig
+ = 
+Ãw
+ 
+	`Z’d_CÚfig_Ini
+(
+$cÚfigP©h
+ . '/­¶iÿtiÚ.ši', 
+APPLICATION_ENV
+, 
+Œue
+);
+
+57 ià((!
+	`defšed
+('APPLICATION_ENV'è|| 'dev–Ým’t' =ð
+APPLICATION_ENV
+)
+
+58 && 
+	`fže_exi¡s
+(
+$cÚfigP©h
+ . '/application.development.ini')) {
+
+59 
+$cÚfigOth”
+ = 
+Ãw
+ 
+	`Z’d_CÚfig_Ini
+(
+$cÚfigP©h
+ . '/­¶iÿtiÚ.dev–Ým’t.ši', 
+APPLICATION_ENV
+);
+
+60 
+$cÚfig
+->
+	`m”ge
+(
+$cÚfigOth”
+);
+
+63  
+$cÚfig
+;
+
+64 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/public/test_phar.php
+
+1 <?
+php
+
+
+3 
+šþude
+ ('ph¬://' . 
+dœÇme
+(
+__FILE__
+) . '/../vendor/ZendFramework/library/zf.phar');
+
+5 
+	g$v”siÚ
+ = 
+Ãw
+ 
+Z’d_V”siÚ
+;
+
+6 
+	g´št
+ "Compiled ZF version is: \r\n";
+
+7 
+´št
+ 
+	g$v”siÚ
+::
+VERSION
+."\r\n";
+
+	@/www/vhosts/backend.vivo2.com/tests/AclTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/AclTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/models/Acl/PeerTest.php";
+
+5 
+	g»quœe_Úû
+ "./application/models/Acl/ContainerTest.php";
+
+6 
+	g»quœe_Úû
+ "./application/models/Acl/Role/PeerTest.php";
+
+7 
+	g»quœe_Úû
+ "./application/models/Acl/Role/AdminTest.php";
+
+8 
+	g»quœe_Úû
+ "./application/models/Acl/Role/ModeratorTest.php";
+
+9 
+	g»quœe_Úû
+ "./application/models/Acl/Role/Permission/PeerTest.php";
+
+10 
+	g»quœe_Úû
+ "./application/models/Acl/Resource/GenericTest.php";
+
+11 
+	g»quœe_Úû
+ "./application/models/Acl/Resource/PeerTest.php";
+
+12 
+	g»quœe_Úû
+ "./application/models/Acl/Assert/PeerTest.php";
+
+13 
+	g»quœe_Úû
+ "./application/models/Acl/Assert/SameOrganisationTest.php";
+
+14 
+	g»quœe_Úû
+ "./application/models/Acl/Filter/PeerTest.php";
+
+15 
+	g»quœe_Úû
+ "./application/models/Acl/Filter/CollectionTest.php";
+
+22 þas 
+	cAþTe¡AÎ
+
+
+29 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+31 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+39 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+41 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Acl');
+
+43 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_AclTest');
+
+44 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Acl_PeerTest');
+
+45 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Acl_ContainerTest');
+
+46 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Acl_Role_PeerTest');
+
+47 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Acl_Role_AdminTest');
+
+48 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Acl_Role_ModeratorTest');
+
+49 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Acl_Role_Permission_PeerTest');
+
+50 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Acl_Resource_PeerTest');
+
+51 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Acl_Resource_GenericTest');
+
+52 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Acl_Assert_PeerTest');
+
+53 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Acl_Assert_SameOrganisationTest');
+
+54 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Acl_Filter_PeerTest');
+
+55 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Acl_Filter_CollectionTest');
+
+58  
+$su™e
+;
+
+59 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/AuthTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/AuthTest.php";
+
+10 þas 
+	cAuthTe¡AÎ
+
+
+17 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+19 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+27 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+29 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Auth');
+
+31 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_AuthTest');
+
+33  
+$su™e
+;
+
+34 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/BehaviourTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/BehaviourTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/models/Behaviour/PeerTest.php";
+
+5 
+	g»quœe_Úû
+ "./application/models/Behaviour/ManagerTest.php";
+
+13 þas 
+	cLogg”Te¡AÎ
+
+
+20 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+22 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+30 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+32 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module Behaviour');
+
+34 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_BehaviourTest');
+
+35 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Behaviour_PeerTest');
+
+36 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Behaviour_ManagerTest');
+
+38  
+$su™e
+;
+
+39 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/ControllerTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/controllers/PageControllerTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/controllers/ServiceControllerTest.php";
+
+5 
+	g»quœe_Úû
+ "./application/controllers/ErrorControllerTest.php";
+
+13 þas 
+	cCÚŒÞËrTe¡AÎ
+
+
+20 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+22 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+30 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+32 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Controllers');
+
+34 
+$su™e
+->
+	`addTe¡Su™e
+('PageControllerTest');
+
+35 
+$su™e
+->
+	`addTe¡Su™e
+('ServiceControllerTest');
+
+36 
+$su™e
+->
+	`addTe¡Su™e
+('ErrorControllerTest');
+
+38  
+$su™e
+;
+
+39 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/EmailTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/EmailsTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/models/Emails/PeerTest.php";
+
+5 
+	g»quœe_Úû
+ "./application/models/EmailsTemplate/PeerTest.php";
+
+13 þas 
+	cEmažsTe¡AÎ
+
+
+20 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+22 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+30 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+32 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module Email‡nd EmailTemplate');
+
+34 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_EmailsTest');
+
+35 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Emails_PeerTest');
+
+36 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_EmailsTemplate_PeerTest');
+
+38  
+$su™e
+;
+
+39 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/ImageTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/ImageTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/models/Images/PeerTest.php";
+
+5 
+	g»quœe_Úû
+ "./application/models/ImagesLookup/PeerTest.php";
+
+13 þas 
+	cImageTe¡AÎ
+
+
+20 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+22 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+30 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+32 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module Image');
+
+34 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_ImageTest');
+
+35 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Images_PeerTest');
+
+36 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_ImagesLookup_PeerTest');
+
+38  
+$su™e
+;
+
+39 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/InterestTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/InterestsTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/models/Interests/PeerTest.php";
+
+12 þas 
+	cIÁ”e¡Te¡AÎ
+
+
+19 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+21 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+29 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+31 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module Interest');
+
+33 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_InterestsTest');
+
+34 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Interests_PeerTest');
+
+36  
+$su™e
+;
+
+37 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/InvitesTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/InvitationsTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/models/Invites/PeerTest.php";
+
+12 þas 
+	cInv™esTe¡AÎ
+
+
+19 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+21 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+29 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+31 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module Invitations');
+
+33 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_InvitationsTest');
+
+34 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Invites_PeerTest');
+
+36  
+$su™e
+;
+
+37 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/MessagesTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/MessagesTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/models/Messages/PeerTest.php";
+
+5 
+	g»quœe_Úû
+ "./application/models/MessagesText/PeerTest.php";
+
+13 þas 
+	cMes§gesTe¡AÎ
+
+
+20 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+22 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+30 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+32 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module Messages');
+
+34 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_MessagesTest');
+
+35 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Messages_PeerTest');
+
+36 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Messages_text_PeerTest');
+
+38  
+$su™e
+;
+
+39 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/OffersTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/OffersTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/models/Offers/PeerTest.php";
+
+12 þas 
+	cOfãrsTe¡AÎ
+
+
+19 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+21 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+29 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+31 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module Offers');
+
+33 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_OffersTest');
+
+34 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Offers_PeerTest');
+
+36  
+$su™e
+;
+
+37 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/OpportunityTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/OpportunitiesTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/models/Opportunities/PeerTest.php";
+
+12 þas 
+	cOµÜtun™yTe¡AÎ
+
+
+19 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+21 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+29 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+31 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module Opportinity');
+
+33 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_OpportunitiesTest');
+
+34 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Opportunities_PeerTest');
+
+36  
+$su™e
+;
+
+37 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/OrganisationTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/OrganisationsTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/models/Organisations/PeerTest.php";
+
+5 
+	g»quœe_Úû
+ "./application/models/OrganisationsCategories/PeerTest.php";
+
+13 þas 
+	cOrgªi§tiÚTe¡AÎ
+
+
+20 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+22 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+30 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+32 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module Organisations');
+
+34 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_OrganisationsTest');
+
+35 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Organisations_PeerTest');
+
+36 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_OrganisationsCategories_PeerTest');
+
+38  
+$su™e
+;
+
+39 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/RewardTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/RewardCategoriesTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/models/RewardCategories/PeerTest.php";
+
+12 þas 
+	cRew¬dTe¡AÎ
+
+
+19 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+21 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+29 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+31 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module Reward');
+
+33 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_RewardTest');
+
+34 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_RewardCategories_PeerTest');
+
+36  
+$su™e
+;
+
+37 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/RolesTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/models/Roles/PeerTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/models/RolesLookup/PeerTest.php";
+
+12 þas 
+	cRÞesTe¡AÎ
+
+
+19 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+21 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+29 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+31 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module Roles');
+
+33 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Roles_PeerTest');
+
+34 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_RolesLookup_PeerTest');
+
+36  
+$su™e
+;
+
+37 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/SearchTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/SearchTest.php";
+
+11 þas 
+	cS—rchTe¡AÎ
+
+
+18 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+20 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+28 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+30 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module Search');
+
+32 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_SearchTest');
+
+34  
+$su™e
+;
+
+35 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/TransactionsTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/models/Transactions/PeerTest.php";
+
+11 þas 
+	cT¿n§ùiÚsTe¡AÎ
+
+
+18 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+20 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+28 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+30 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module Transactions');
+
+32 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Transactions_PeerTest');
+
+34  
+$su™e
+;
+
+35 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/UserTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/UsersTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/models/Users/PeerTest.php";
+
+5 
+	g»quœe_Úû
+ "./application/services/UserProfileTest.php";
+
+6 
+	g»quœe_Úû
+ "./application/models/UsersBalances/PeerTest.php";
+
+7 
+	g»quœe_Úû
+ "./application/models/UsersCredentials/PeerTest.php";
+
+8 
+	g»quœe_Úû
+ "./application/models/UsersOrganisationsLookup/PeerTest.php";
+
+9 
+	g»quœe_Úû
+ "./application/models/Users/CSVManagerTest.php";
+
+17 þas 
+	cU£rTe¡AÎ
+
+
+24 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+26 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+34 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+36 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module User');
+
+38 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_UsersTest');
+
+39 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Users_PeerTest');
+
+40 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_UserProfileTest');
+
+41 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_UsersBalances_PeerTest');
+
+42 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_UsersCredentials_PeerTest');
+
+43 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_UsersOrganisationsLookup_PeerTest');
+
+44 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Users_CSVManagerTest');
+
+46  
+$su™e
+;
+
+47 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/VoucherTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/VauchersTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/models/Vouchers/PeerTest.php";
+
+12 þas 
+	cVouch”Te¡AÎ
+
+
+19 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+21 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+29 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+31 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module Voucher');
+
+33 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_VouchersTest');
+
+34 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_Vouchers_PeerTest');
+
+36  
+$su™e
+;
+
+37 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/WidgetTestAll.php
+
+1 <?
+php
+
+
+3 
+	g»quœe_Úû
+ "./application/services/WidgetsTest.php";
+
+4 
+	g»quœe_Úû
+ "./application/services/WidgetsCustomisationTest.php";
+
+5 
+	g»quœe_Úû
+ "./application/models/WidgetsCustomisation/PeerTest.php";
+
+13 þas 
+	cWidg‘Te¡AÎ
+
+
+20 
+public
+ 
+funùiÚ
+ 
+	$maš
+()
+
+22 
+PHPUn™_TextUI_Te¡RuÂ”
+::
+	`run
+(
+£lf
+::
+	`su™e
+());
+
+30 
+public
+ 
+funùiÚ
+ 
+	$su™e
+()
+
+32 
+$su™e
+ = 
+Ãw
+ 
+	`PHPUn™_F¿mewÜk_Te¡Su™e
+('Vivo2 - Module Widget');
+
+34 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_WidgetsTest');
+
+35 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Service_WidgetsCustomisationTest');
+
+36 
+$su™e
+->
+	`addTe¡Su™e
+('Application_Model_WidgetsCustomisation_PeerTest');
+
+38  
+$su™e
+;
+
+39 
+	}
+}
+
+	@/www/vhosts/backend.vivo2.com/tests/bootstrap.php
+
+1 <?
+php
+
+
+2 
+ši_£t
+('xdebug.cli_color', 1);
+
+3 
+ši_£t
+('xdebug.show_exception_trace', 0);
+
+5 
+defšed
+('APPLICATION_PATH')
+
+6 || 
+defše
+('APPLICATION_PATH', 
+»®·th
+(
+dœÇme
+(
+__FILE__
+) . '/../application'));
+
+9 
+defšed
+('APPLICATION_ENV')
+
+10 || 
+defše
+('APPLICATION_ENV', (
+g‘’v
+('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'testing'));
+
+13 
+defšed
+('CONFIG_PATH')
+
+14 || 
+defše
+('CONFIG_PATH', 
+APPLICATION_PATH
+ . '/configs/application.ini');
+
+17 
+defšed
+('TEST_PATH')
+
+18 || 
+defše
+('TEST_PATH', 
+»®·th
+(
+dœÇme
+(
+__FILE__
+)));
+
+20 
+defšed
+('BASE_PATH')
+
+21 || 
+defše
+('BASE_PATH', 
+»®·th
+(
+dœÇme
+(
+__FILE__
+) . '/../'));
+
+23 
+defše
+('DS', 
+DIRECTORY_SEPARATOR
+);
+
+24 
+defše
+('PASSWORD_SALT', 'tests');
+
+26 
+defšed
+('TEST_DATA')
+
+27 || 
+defše
+('TEST_DATA', 
+TEST_PATH
+ . 
+DIRECTORY_SEPARATOR
+ . 'application' . DIRECTORY_SEPARATOR . 'data');
+
+30 
+£t_šþude_·th
+(
+im¶ode
+(
+PATH_SEPARATOR
+, 
+¬¿y
+(
+
+31 
+»®·th
+(
+APPLICATION_PATH
+ . '/../library'),
+
+32 
+g‘_šþude_·th
+()
+
+35 
+	g»quœe_Úû
+ 'Zend/Loader/Autoloader.php';
+
+36 
+	g$autÞßd”
+ = 
+Z’d_Lßd”_AutÞßd”
+::
+g‘In¡ªû
+();
+
+37 
+	g$autÞßd”
+->
+»gi¡”Name¥aû
+('Vivo_');
+
+38 
+	g»quœe_Úû
+ 'Vivo/Test/DatabaseTestCase.php';
+
+39 
+	g»quœe_Úû
+ 'Vivo/Test/ControllerTestCase.php';
+
+41 
+	gZ’d_SessiÚ
+::
+$_un™Te¡EÇbËd
+ = 
+Œue
+;
+
+43 
+£tUpBoÙ¡¿p
+();
+
+49 
+funùiÚ
+ 
+	$£tUpBoÙ¡¿p
+()
+
+51 
+$äÚt
+ = 
+Z’d_CÚŒÞËr_FrÚt
+::
+	`g‘In¡ªû
+();
+
+52 
+$äÚt
+->
+	`£tCÚŒÞËrDœeùÜy
+(
+
+53 
+	`¬¿y
+(
+
+54 'deçuÉ' => 
+APPLICATION_PATH
+ . '/controllers'
+
+58 
+Ãw
+ 
+	`Z’d_Lßd”_AutÞßd”_Resourû
+(
+	`¬¿y
+(
+
+59 'ba£P©h' => 
+APPLICATION_PATH
+,
+
+61 '»sourûTy³s' => 
+	`¬¿y
+(
+
+62 'fÜm' => 
+	`¬¿y
+(
+
+66 'mod–' => 
+	`¬¿y
+(
+
+70 '¶ugš' => 
+	`¬¿y
+(
+
+74 '£rviû' => 
+	`¬¿y
+(
+
+78 '£rviû¶ugš' => 
+	`¬¿y
+(
+
+85 
+$¹
+ = 
+$äÚt
+->
+	`g‘Rou‹r
+();
+
+86 
+$¹
+->
+	`addRou‹
+('·ge', 
+Ãw
+ 
+	`Z’d_CÚŒÞËr_Rou‹r_Rou‹
+('page/:action'));
+
+87 
+	}
+}
+
+90 
+funùiÚ
+ 
+	$g‘CÚfig
+()
+
+92 
+$cÚfigP©h
+ = 
+APPLICATION_PATH
+ . '/configs';
+
+94 
+$cÚfig
+ = 
+Ãw
+ 
+	`Z’d_CÚfig_Ini
+(
+CONFIG_PATH
+, '‹¡šg', 
+Œue
+);
+
+95 ià(
+	`fže_exi¡s
+(
+$cÚfigP©h
+ . '/application.development.ini')) {
+
+96 
+$cÚfigOth”
+ = 
+Ãw
+ 
+	`Z’d_CÚfig_Ini
+(
+$cÚfigP©h
+ . '/application.development.ini', 'testing');
+
+97 
+$cÚfig
+->
+	`m”ge
+(
+$cÚfigOth”
+);
+
+99  
+$cÚfig
+;
+
+100 
+	}
+}
+
+105 
+funùiÚ
+ 
+	$ü—‹Te¡DB
+()
+
+107 
+$cÚfig
+ = 
+	`g‘CÚfig
+();
+
+108 
+$‹¡Schema
+ = 
+$cÚfig
+->
+»sourûs
+->
+db
+->
+·¿ms
+->
+‹¡db
+;
+
+109 
+$»®Schema
+ = 
+$cÚfig
+->
+»sourûs
+->
+db
+->
+·¿ms
+->
+»®db
+;
+
+110 
+$db
+ = 
+Z’d_Db
+::
+	`çùÜy
+(
+$cÚfig
+->
+»sourûs
+->
+db
+);
+
+112 
+$sql
+ = 'DROP SCHEMA IF EXISTS `' . 
+$‹¡Schema
+ . '`';
+
+113 
+$db
+->
+	`qu”y
+(
+$sql
+);
+
+114 
+$sql
+ = 'CREATE SCHEMA `' . 
+$‹¡Schema
+ . '`';
+
+115 
+$db
+->
+	`qu”y
+(
+$sql
+);
+
+116 
+$sql
+ = 'USE `' . 
+$‹¡Schema
+ . '`';
+
+117 
+$db
+->
+	`qu”y
+(
+$sql
+);
+
+119 
+$sqlTabËs
+ = 'SELECT `TABLE_NAME` AS‚ame
+
+120 
+FROM
+ 
+šfÜm©iÚ_schema
+.`
+TABLES
+`
+
+121 
+WHERE
+ `
+TABLE_SCHEMA
+` = "'.$realSchema.'"';
+
+122 
+$bËs
+ = 
+$db
+->
+	`ãtchAÎ
+(
+$sqlTabËs
+);
+
+124 
+$qu”y
+ = 
+	`¬¿y
+();
+
+125 
+	`fÜ—ch
+ (
+$bËs
+ 
+as
+ 
+$bË
+) {
+
+126 
+$qu”y
+[] = 'CREATE TABLE `'.
+$‹¡Schema
+.'`.`'.
+$bË
+['name'].'`
+
+127 (
+LIKE
+ `'.$»®Schema.'`.`'.$bË['
+Çme
+'].'`)';
+
+130 
+$db
+->
+	`qu”y
+(
+	`im¶ode
+(';', 
+$qu”y
+));
+
+131 
+	}
+}
+
+	@
+1
+.
+1
+/usr/include
+23
+1250
+/www/vhosts/backend.vivo2.com/application/Bootstrap.php
+/www/vhosts/backend.vivo2.com/public/index.php
+/www/vhosts/backend.vivo2.com/public/test_phar.php
+/www/vhosts/backend.vivo2.com/tests/AclTestAll.php
+/www/vhosts/backend.vivo2.com/tests/AuthTestAll.php
+/www/vhosts/backend.vivo2.com/tests/BehaviourTestAll.php
+/www/vhosts/backend.vivo2.com/tests/ControllerTestAll.php
+/www/vhosts/backend.vivo2.com/tests/EmailTestAll.php
+/www/vhosts/backend.vivo2.com/tests/ImageTestAll.php
+/www/vhosts/backend.vivo2.com/tests/InterestTestAll.php
+/www/vhosts/backend.vivo2.com/tests/InvitesTestAll.php
+/www/vhosts/backend.vivo2.com/tests/MessagesTestAll.php
+/www/vhosts/backend.vivo2.com/tests/OffersTestAll.php
+/www/vhosts/backend.vivo2.com/tests/OpportunityTestAll.php
+/www/vhosts/backend.vivo2.com/tests/OrganisationTestAll.php
+/www/vhosts/backend.vivo2.com/tests/RewardTestAll.php
+/www/vhosts/backend.vivo2.com/tests/RolesTestAll.php
+/www/vhosts/backend.vivo2.com/tests/SearchTestAll.php
+/www/vhosts/backend.vivo2.com/tests/TransactionsTestAll.php
+/www/vhosts/backend.vivo2.com/tests/UserTestAll.php
+/www/vhosts/backend.vivo2.com/tests/VoucherTestAll.php
+/www/vhosts/backend.vivo2.com/tests/WidgetTestAll.php
+/www/vhosts/backend.vivo2.com/tests/bootstrap.php
