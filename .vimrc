@@ -1,5 +1,8 @@
+filetype plugin indent on
+execute pathogen#infect()
 set nocompatible
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 set hlsearch
 set ruler
@@ -9,6 +12,7 @@ set title
 set autoindent
 set smartindent
 set nocindent
+set expandtab
 au FileType helpfile set nonumber      " no line numbers when viewing help
 au FileType helpfile nnoremap <buffer><cr> <c-]>   " Enter selects subject
 au FileType helpfile nnoremap <buffer><bs> <c-T>   " Backspace to go back
@@ -40,7 +44,11 @@ au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhitespace /\s\+$/
 au BufWinLeave * call clearmatches()
 
-inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
+inoremap <C-C> <ESC>:quit<CR>
+nnoremap <C-C> :quit<CR>
+vnoremap <C-C> :quit<CR>
+
+inoremap <C-P> <ESC>:call PhpDocSingle()<CR>
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
 " cscope add ~/.vim/cscope/currentdb.out /www/vhosts/
@@ -81,17 +89,20 @@ set statusline+=\ [%{getcwd()}] " current dir
 set statusline+=%=%-14.(%l,%c%V%)\ %p%% " Right aligned file nav info
 
 if has('gui_running')
-	" let g:solarized_termcolors=16
-	" set t_Co=256
-	" set background=light
-	colorscheme solarized
+    " let g:solarized_termcolors=16
+    " set t_Co=256
+    " set background=light
+    colorscheme solarized
 else
-	"let g:solarized_termcolors=16
-	" set t_Co=256
-	set background=dark
-	"colorscheme darkblue
+    "let g:solarized_termcolors=16
+    " set t_Co=256
+    set background=dark
+    " colorscheme darkblue
 endif
 
 :au! BufWritePost $MYVIMRC source $MYVIMRC 
 
 nnoremap <F2> :NERDTreeToggle<CR>
+
+let feature_filetype='behat'
+let feature_filetype='behat'
