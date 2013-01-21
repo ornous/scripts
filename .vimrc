@@ -1,5 +1,6 @@
 filetype plugin indent on
 execute pathogen#infect()
+execute pathogen#helptags()
 set nocompatible
 set tabstop=4
 set softtabstop=4
@@ -23,8 +24,9 @@ set showmode
 au BufWritePost *.sh !chmod +x %
 au BufWritePost *.pl !chmod +x %
 
-au BufNewFile,BufRead  *.phtml  set syntax=php
 au BufNewFile,BufRead  *.pls    set syntax=dosini
+au BufNewFile,BufRead  *.scss    set ft=scss.css
+:au! BufWritePost $MYVIMRC source $MYVIMRC 
 
 au FileType python set omnifunc=pythoncomplete#Complete
 au FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -35,7 +37,7 @@ au FileType php set omnifunc=phpcomplete#CompletePHP
 au FileType c set omnifunc=ccomplete#Complete
 
 au FileType php noremap <C-L> :!php -l %<CR>
-" au Filetype html,xml,xsl source ~/.vim/closetag.vim
+au Filetype html,xml,xsl source ~/.vim/closetag.vim
 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 
@@ -104,7 +106,6 @@ else
     " colorscheme darkblue
 endif
 
-:au! BufWritePost $MYVIMRC source $MYVIMRC 
 
 nnoremap <F2> :NERDTreeToggle<CR>
 
