@@ -48,6 +48,10 @@ inoremap <C-C> <ESC>:quit<CR>
 nnoremap <C-C> :quit<CR>
 vnoremap <C-C> :quit<CR>
 
+inoremap <C-B> <DSE>:BehatCmdToClipBoard<CR>
+nnoremap <C-B> :BehatCmdToClipBoard<CR>
+vnoremap <C-B> :BehatCmdToClipBoard<CR>
+
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
