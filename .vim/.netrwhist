@@ -1,6 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/ousmane/git/vim/.git'
-let g:netrw_dirhist_2='/www/github/scripts/.vim/bundle/vim-haml'
-let g:netrw_dirhist_3='/www/github/scripts/.vim/bundle/vim-sensible/plugin'
-let g:netrw_dirhist_2='/home/ousmane/git/vim/.vim/bundle/vim-behat'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/www/vhosts/backend.vivo2.com/.git/info'
+let g:netrw_dirhist_2='/www/vhosts/backend.vivo2.com/build'
+let g:netrw_dirhist_3='/www/frameworks/ZendFramework/ZendFramework-1.11.11/library/Zend/Filter/Word/Separator'
+let g:netrw_dirhist_4='/home/ousmane/write-ups'

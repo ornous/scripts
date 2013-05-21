@@ -9,6 +9,7 @@ set hlsearch
 set ruler
 set number
 set ignorecase
+set smartcase
 set title
 set autoindent
 set smartindent
@@ -37,7 +38,7 @@ au FileType php set omnifunc=phpcomplete#CompletePHP
 au FileType c set omnifunc=ccomplete#Complete
 
 au FileType php noremap <C-L> :!php -l %<CR>
-au Filetype html,xml,xsl source ~/.vim/closetag.vim
+" au Filetype html,xml,xsl source ~/.vim/closetag.vim
 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 
@@ -59,11 +60,10 @@ nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
 " cscope add ~/.vim/cscope/currentdb.out /www/vhosts/
 set mouse=a
+set cursorline
 set virtualedit=onemore
 set nospell
-set undofile
-set undolevels=1000
-set undoreload=10000
+set history=1000
 set nocursorline
 set ruler
 set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
@@ -111,3 +111,27 @@ nnoremap <F2> :NERDTreeToggle<CR>
 
 let feature_filetype='behat'
 let feature_filetype='behat'
+
+" Tidier backups
+set backupdir=~/.vim/tmp/backup/
+set backup
+
+if has("autocmd")
+  autocmd BufWritePre * let &backupext = substitute(expand('%:p:h'), '/', '%', 'g') . '~'
+endif
+
+set directory=~/.vim/tmp/swap//
+
+set viminfo+=n~/.vim/viminfo
+
+set undodir=~/.vim/tmp/undo//
+set undofile
+set undolevels=1000
+set undoreload=10000
+
+if has("autocmd")
+  autocmd BufReadPost *
+        \ if line("'\"") > 1 && line("'\"") <= line("$") |
+        \ exe "normal! g`\"" |
+        \ endif
+endif
