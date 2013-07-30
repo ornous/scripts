@@ -40,6 +40,21 @@ au FileType c set omnifunc=ccomplete#Complete
 au FileType php noremap <C-L> :!php -l %<CR>
 " au Filetype html,xml,xsl source ~/.vim/closetag.vim
 
+" phpchecks
+let g:syntastic_mode_map = { 'mode': 'passive',
+                           \ 'active_filetypes': ['php', 'javascript',
+                           \ 'cucumber', 'html', 'sh', 'scss', 'css', 'json',
+                           \ 'yaml'],
+                           \ 'passive_filetypes': ['html'] }
+
+let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
+let g:syntastic_php_phpcs_args='--report=csv --standard=zend '
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_balloons = 1
+let g:syntastic_enable_highlighting = 1
+
+
+
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 
 au BufWinEnter * match ExtraWhitespace /\s\+$/
@@ -59,6 +74,7 @@ inoremap <C-P> <ESC>:call PhpDocSingle()<CR>
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
 " cscope add ~/.vim/cscope/currentdb.out /www/vhosts/
+"
 set mouse=a
 set cursorline
 set virtualedit=onemore
@@ -110,7 +126,6 @@ endif
 nnoremap <F2> :NERDTreeToggle<CR>
 
 let feature_filetype='behat'
-let feature_filetype='behat'
 
 " Tidier backups
 set backupdir=~/.vim/tmp/backup/
@@ -121,6 +136,7 @@ if has("autocmd")
 endif
 
 set directory=~/.vim/tmp/swap//
+set directory+=.
 
 set viminfo+=n~/.vim/viminfo
 
