@@ -8,21 +8,22 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/hide
+~MSle0/^\([#/?]\|$\)
 
 # Last Substitute Search Pattern:
-~MSle0&slim
+~MSle0~&^\([#/?]\|$\)
 
 # Last Substitute String:
 $public
 
 # Command Line History (newest to oldest):
+:q
 :wq
+:v/^\([#/?]\|$\)/d
 :w
 :1,8d
 :qa!
 :qa
-:q
 ::q
 :%s/slim/public
 :wqa
@@ -36,869 +37,262 @@ $public
 :e /www/vhosts/backend.vivo2.com/application/models/Vshop/Goods/Manager.php
 :vsp
 :qw
-:228t237
-:nnnn
-:66<F6>
-:66
-:e application/models/Acl/Peer.php
-:n
-:%s/constant/define
-:e /etc/apache2/sites-available/backend.vivo2.com
-:%s/\s\+$//
-:'<,'>qa
-:Q
-:143,161t161
-:107,124t124
-:159,165y
-:68,83t83
-:p
-:e application/forms/Vshop/Goods/Add.php
-:155,160t172
-:e library/Vivo/Test/GenericTestCase.php
-:116
-:e library/Vivo/Test/PeerTestCase.php
-:20,28y
-:26
-:15,23y
-:e library/Vivo/Test/ServiceTestCase.php
-:e library/Vivo/Test/ManagerTestCase.php
-:51,59y
-:e /usr/share/php/PHPUnit/Util/Test.php
-:e MockManager/Abstract.php
-:.,164d
-:283,311d
-:284,304d
-:10,17d
-:10,19d
-:10,19
+:q
+:qa
+:bn
+:Bn
+:e build/config/static-code-analysis.xml
 :bd
-:bk
-:3,9y
-:3,9s
-:%s/_SUT/_sut/gic
-:q!
-:Gblame
-:Wq
-:qqa
-:qadd
-:diffoff
-:18,19s/4/5
-:18,19s/84/85
-:14,17t17
-:'<,'>q
+:e /getBeanstalkd
+:wq
 :we
-:ha
-:help hardcopy
-:hardcopy
-:set paste
-:137,154t181
-:136.165
-:nohls
-:help hlsearch
-:help highlight
-:/>>>
-:62
-:%s/\s\+$//gc
-:e build.xml
-:147,152d
-:142,154y
-:145,152s/source/access/g
-:145,152s/sourceType/accessType/g
-:145,152s/sourceType/sccessType/g
-:145,152s/SourceType/AccessType/g
-:113,125y
-:redraw
-:35,44y
-:61,69s/Name/UsersId/g
-:e %
-:87,90s/Type/Name
-:57,61t86
-:30,34y
-:e tests/unit/application/models/RolesTest.php
-:bdelete
-:bkill
-:e application/models/Emails.php
-:30,39s/get/set
-:30,39s/Get/Set
-:19,29t29
-:30,54s/name/type
-:30,54s/Name/Type
-:%s/DetailedInfo/Name
-:30,54t29
-:%s/detailed_info/name
-:100,110y
-:$
-:111,123y
-:e tests/unit/application/models/Vshop/GoodsTest.php
-:Test
-:repaint
+:w
+:27t33
+:30t32
+:25t31
+:18t24
+:6t18
 :W
-:2w
-:28d
-:15t28
-:0
-:e tests/unit/application/models/EmailsTest.php
-:%s/\s\+\* @author\n//gc
-:%s/\s\+\*
-:%s/\s\+*
-:/testSetCreatedAtProxiesOntoDtoForValidIdentifier
-:/400
-:e application/models/Vshop/Goods.php
-:26,68normal >>
-:62,70d
-:%s/vme-653/vme-655/g
-:%s/VME-656/VME-655/g
-:%s/VME-653/VME-655/g
-:e tests/functional/features/mgmt/shop/add-shop-good.feature
-:492
-:e library/Vivo/Model/Abstract.php
-:194
-:e application/models/Organisations/Budget/Exception.php
-:82
-:76
-:361
-:510
-:58
-:239
-:198
-:156
-:165
-:128,133normal <<
-:124
-:60
-:42
-:868
-:218
-:184
-:111
-:197
-:175
-:9
-:12
-:173
-:25
-:75
-:69
-:453
-:/','
-:120
-:48
-:72
-:132
-:735
-:e application/models/Transactions/Peer.php
-:115,117normal <<
-:30,40normal <<
-:151
-:77
-:57
-:30
-:42,51normal >>
-:104
-:907
-:899
-:883,890normal <<
-:882
-:18normal >>
-:6,14normal >>
-:.,.+5
-:4,19normal >>
-:2,21normal <<
-:7,13normal >>
-:7,13normal <<
-:395
-:49
-:$d
-:43
-:97
-:74,110normal >>
-:%retab
-:retab
-:379
-:246
-:146
-:159
-:68
-:16,55normal <<
-:12,55normal <<
-:113
-:94,109s/','/', '/g
-:94,109s/',',', '/g
-:%s/
-:/,[^ ]
-:71
-:45
-:71,75t75
-:e features/bootstrap/TableContext.php
-:59,69t70
-:59,70t69t70
-:e features/bootstrap/VivoMgmtContext.php
-:e tests/functional/features/bootstrap/VivoMgmtContext.php
-:w /home/ousmane/staff-awarding-report.csv
-:w /home/ousmane/
-:%s/^+\([-]\++\)\+$\n//g
-:%s/^+\([-]\++\)\+_$\n//g
-:%s/| \(.*\) |/\1/g
-:%s/\s\+|\s\+/, /g
-:@a
-:%s/_^+\([-]\++\)\+$\n//g
-:%s/^+\([-]\++\)\+$\n//gm
-:%s/\n^+\([-]\++\)\+\n//g
-:%s/\n^+\([-]\++\)\+//g
-:%s/^+\([-]\++\)\+\n//g
-:%s/^+\([-]\++\)\+//g
-:%s/\^+\([-]\++\)\+//g
-:%s/\^+([-]\++\)\+//g
-:%s/\(+[-]\++\)\+//g
-:%s/^\(+[-]\++\)\+//g
-:%s/^\(?:+[-]\++\)\+//g
-:%s/^\(?:+[-]\++\)+//g
-:%s/^+[-]\++//g
-:%s/^+[-]\+/+/g
-:%s/^+[-]\+//g
-:1d
-:3d
-:a
-:%s/^| \(.*\) |$/\1/g
-:%s/ \+| \+/, /g
-:%s/ +| +/, /g
-:%s/\\s+|\\s+/, /g
-:%s/\s+|\s+/, /g
-:%s/[ |]\+/, /g
-:%s/[ |]\+/,/g
-:%s/[ |]\+//I
-:%s/[ ]\+//I
-:%s/\[ \]\+//I
-:%s/\[ \]+//I
-:%s/[ ]+//I
-:%s/[ ]+//i
-:%s/[ ]+//e
-:%s/ //e
-:%s/ //
-:%s/ *//
-:%s/ +//
-:%s/\\s+//
-:%s/\s+//
-:%s/\s+/ /g
-:%s/\s+/\ /g
-:%s/\s+/\, /g
-:%s/\s+/, /g
-:%s/[\s+/, /g
-:%s/[\s]+/, /g
-:%s/.*[ ]+.*/, /g
-:%s/[ ]+/, /g
-:%s/\[m\]+/, /g
-:%s/[m]+/, /g
-:%s/[U]+/, /g
-:%s/[|]+/, /g
-:%s/\[|\]*/, /g
-:%s/[|]*/, /g
-:%s/[| ]+/, /g
-:%s/[ | ]+/, /g
-:%s/[ \| ]+/, /g
-:%s/[ \|]+/, /g
-:%s/[ |]+/, /g
-:%s/[ |]*/, /g
-:%s/^[\| ]*//g
-:%
-:%s/[ | ]*$//g
-:%s/.*[ | ]*$//g
-:%s/[| ]*$//g
-:%s/[^ |]*$//g
-:%s/[^ |]*//g
-:%s/[^ |]+//g
-:%s/[^ |]+$//g
-:%s/[^\ |]+$//g
-:%s/[^\| ]+$//g
-:%s/[\| ]+$//g
-:%s/\(^[\| ]+|[\| ]+$\)//g
-:%s/\(?:^[\| ]+|[\| ]+$\)//g
-:%s/\(?:^[\| ]*|[\| ]+$\)//g
-:1s/^[\| ]*//g
-:1s/^[\| ]//g
-:1s/^[\\| ]//g
-:1s/^[\\| ]+//g
-:1s/^[\| ]+//g
-:1s/^[| ]+//g
-:%s/^[\| ]+//g
-:%s/^[| ]+//g
-:%s/^[| ]+\([^\| ]\)/\1/g
-:%s/^[\| ]+\([^\| ]\)/\1/g
-:%s/^[\| ]\([^\| ]\)/\1/g
-:%s/^\([^\| ]\)/\1/g
-:%s/[^\| ]//g
-:e ../unit/application/models/Vshop/Goods/Dispatchers/GenericTest.php
-:33,38normal >>
-:<F5>
-:93,112t112
-:135,139t146
-:.,111s/column/row
-:73,92t92
-:e tests/functional/features/bootstrap/TableContext.php
-:164,175t175
-:e tests/functional/features/bootstrap/FeatureContext.php
-:44,52t52
-:e tests/functional/features/bootstrap/SubContext.php
-:e tests/functional/features/bootstrap/BaseContext.php
-:8,15t15
-:e application/modules/admin/controllers/ShopController.php
-:e application/models/Vshop/Goods/Values.php
-:%s/643/656
-:%SubstituteCase/dispatcher/vendor/cg
-:%SubstituteCase/dispatcher/supplier/cg
-:%SubstituteCase/dispatcher/supplier
-:e application/models/Vshop/Goods/Dispatchers/Abstract.php
-:e library/Vivo/Test/MockManager.php
-:77normal .
-:66normal .
-:66normal . | 77normal
-:55normal .
-:47normal .
-:22,29t29
-:48,58t58
-:37,47t47
-:21,28t28
-:22
-:e ../../../../../../../application/models/Vshop/Goods/Dispatchers/Abstract.php
-:e ../../../../../../application/models/Vshop/Goods/Dispatchers/Abstract.php
-:e ../../../../../application/models/Vshop/Goods/Dispatchers/AbstractTest.php
-:.n dd
-:7,13t13
-:e features/colorpicker.feature
-:e current-feature.yml
-:e features/bootstrap/WidgetContext.php
-:e features/mgmt/shop/manage-shop-good.feature
-:e features/bootstrap/FeatureContext.php
-:e features/bootstrap/VivomeContext.php
-:53,59y
-:42,47t47
-:59
-:60,71y
-:224,241d
-:45,51d
-:/inte
-:392
-:39
-:e ~/.vimrc
-:!behat tests/functional/features/list-organisation-members.feature
-::w
-:%s-tests/application/-tests/integration/application/-
-:%s-tests/application-tests/integration/application/-
-:69,79s-tests/integration/application/g/-tests/integration/application/-
-:s-tests/integration/application/g/-tests/integration/application/-
-:s-tests/integration/application/g/-tests/integration/application/
-:/tests\/application\/data
-:69,79s-tests/application-tests/integration/application/g
-:422,431s-tests/application-tests/integration/application/g
-:318,346normal <<<<
-:318,346normal <<
-:5,33y
-:e /www/vhosts/backend.vivo2.com/vadminpublic/css/stylesheet.css
-:e features/bootstrap/SubContext.php
-:123,132t132
-:e 
-:e fe
-:e tests/unit/bootstrap/myisam.php
-:2,114d
-:2,47d
-:.!:Wq
-:24,27
-:e ../myisam.php
-:e ../innodb.php
-:.p
-:147,149y
-:e ../config/phpunit.xml
-:e library/Vivo/Manager/Abstract.php
-:e library/Vivo/Manager/Interface.php
-:e library/Vivo/Test/ModelTestCase.php
-:%s/node/hub/g
-:%s/node/hub
-:68,70t79
-:131
-:141
-:e application/forms/Vshop/Goods.php
-:e tests/application/models/Vshop/Goods/ManagerTest.php
-:20,$d
-:91,211d
-:/throwsexception
-:throwsexception
-:e tests/unit/config/phpunit.nocoverage.xml
-:2,$d
-:e tests/functional/features/bootstrap/VivomeContext.php
-:e tests/functional/features/bootstrap/WidgetContext.php
-:70,96d
-:20,22t28
-:.,$d
-:.,.+2normal >>
-:.,.+2normal >
-:e tests/unit/bootstrap/application.php
-:e application/models/Vshop/Goods/Suppliers/Abstract.php
-:92,120y
-:92,96t111
-:92,96t101
-:4normal o
-:4normal O
-:1normal p
-:2,6y
-:3normal p
-:e ../../application/models/Vshop/Goods.php
-:138t168
-:138t158
-:152,154t147
-:46,48t58
-:e VivoMgmtContext.php
-:e BaseContext.php
-:54,71t71
-:43,49m60
-:36,42t42
-:24,27s/current-functional-tests/regression-tests
-:19,23t23
-:206,222s/current-functional-tests/regression-tests
-:191,206t206
-:191,198t198
-:!ls ~/.vim/tmp/swap/
-:e ../
-:e ../../ap
-:e tests/functional/features/mgmt/shop/manage-shop-good.feature
-:15,20
-:8,14t14
-:13normal o
-:8
-:e application/models/ShopOrders/Cancellation/Transactions/Order.php
-:171
-:%s/$validSourceType/$_validSourceType/Ic
-:/validacc
-:%s/$validAccessType/$_validAccessType/Ic
-:108
-:199
-:187
-:138,142normal <<
-:321,330s/vivo1/vivoOne
-:295
-:286
-:43,48t48
-:8,9t44
-:44,50t50
-:40,
-:101
-:284,295d
-:260
-:1358
-:280
-:135
-:47,55s/allowed_values/allowedValues
-:47
-:69d
-:834
-:134
-:%s/_offers_types/offersTypes/gIc
-:75,88t88
-:%s/\([^_]\)collection/\1_collection/gIc
-:%s/([^_])collection/\1_collection/gIc
-:%s/[^_]collection/_collection/gIc
-:35
-:15
-:e vadminpublic/css/stylesheet.css
-:44,68y
-:paint
-:22,32y
-:e ../backend.vivo2.com2/application/models/Vshop/Goods/Manager.php
-:e application/models/Vshop/Goods/Manager.php
-:13,18t20
-:e application/modules/admin/views/scripts/shop/manage-shop-goods.phtml
-:q:q
-:18,23y
-:e tests/functional/features/mgmt/shop/discontinue-shop-good.feature
-:/testGetEventDa
-:/
-:/testGetEvent
-:e application/models/Users/Peer.php
-:1028
-:680
-:78
-:64
-:74
-:204
-:180
-:55
-:230
-:/$currency
-:e /usr/share/php/PHPUnit/Framework/Constraint/Callback.php
-:e /usr/share/php/PHPUnit/Framework/Constraint.php
-:62,94y
-:604
-:wq:wq
-:e library/Vivo/Daemon/Abstract.php
-:%s
-:99
-:85
-:/sendMessagesToSele
-:/sendSelecte
-:/application/services/Messages.php
-:103
-:/_getChartDa
-:527,549d
-:548
-:153
-:e application/services/Broker.php
-:wn
-:%s-    /\*\*\n     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*/\n    public function delete-    /**     * Delete the object     *     * \@return integer     */    public function delete-
-:%s-    /\*\*\n     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*/\n    public function delete-    /**     * Delete the object     *     * \@return integer     */    public function delete-c
-:440y
-:2
-:%s-    /\*\*\n     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*/\n    public function delete-    /**     * Delete the object     *     * \@return integer     */     public function delete-c
-:%s-    /\*\*\n     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*/\n    public function delete-    /**     * Delete the object     *     * \@return integer     *     public function delete-c
-:%s-    /\*\*\n     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*/\n    public function delete-    /**     * Delete the object\n     *     * \@return integer\n     *     public function delete-c
-:%s-    /\*\*\n     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*/\n    public function delete-    /**     * Delete the object\n     *     * @return integer\n     *     public function delete-c
-:%s-    /\*\*\n     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*/\n    public function delete-    /\*\*     \* Delete the object\n     \*     \* @return integer\n     \*     public function delete-c
-:%s-    /\*\*\n     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*/\n    public function delete-    /\*\*\n     \* Delete the object\n     \*\n     \* @return integer\n     \*\n     public function delete-c
-:%s-    /\*\*\n     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*\n    public function delete-    /\*\*     \* Delete the object\n     \*     \* @return integer\n     \*     public function delete-c
-:s-    /\*\*\n     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*/\n    public function delete-    /\*\*\n     \* Delete the object\n     \*\n     \* @return integer\n     \*\n     public function delete-c
-:133,138y
-:s-    /\*\*\n     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*/\n    public function delete--c
-:-    \/\*\*\n     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*\/\n    public function delete-
-:/    \/\*\*\n     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*\/\n    public function delete/
-:/    \/\*\*\n     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*\/\n    public function delete
-:/    \/\*\*     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*\/\n    public function delete
-:/     \* Method description\n     \*\n     \* @author\n     \* @return\n     \*\/\n    public function delete
-:/    \*\n     \* @author\n     \* @return\n     \*\/\n    public function delete
-:/     \* @author\n     \* @return\n     \*\/\n    public function delete
-:/     \* @author\n     \* @return\n     \*\/
-:/     \* @author\n     \* @return\n     \*/
-:/     \* @author\n     \* @return\n     */
-:/     \* @author\n     \* @return
-:/     \* @author\n
-:/     \*
-:/    \*
-:/    *
-:    *
-:    \\\*
-:    \\*
-:    \*
-:/     * @author     * @return
-:/    * @author    * @return
-:/    * @author\\n    * @return
-:/    * @author\n    * @return
-:/if ($this->is
-:/public function save
-:98,103d
-:151,156d
-:266,270d
-:166,270d
-:138,143d
-:55,60d
-:150,155d
-:96,101d
-:106,111d
-:.-6,.-1d
-:.-1,.-7d
-:165,170d
-:73,78y
-:188,195t195
-:136,143t143
-:.;
-:.:
-:.
-:set invpaste nopaste?:q
-:set invpaste nopaste?
-:set invpaste
-:set invpaste paste?
-:set nopaste invpaste
-:e! ~/.vimrc
-:pastetoggle
-:e ~/.vimrc!
-:set nopaste
-:nopaste
-:paste
-:set paste nopaste
-:set paste=nopaste
-:help syntastic-checker-option
-:Helptags
-:229,241t241
-:d
-:help syntastic
-:e library/Vivo/Model/Dbtable.php
-:e! application/models/Extraearners.php
-:e application/models/Extraearners.php
-:e tests/unit/application/models/ExtraearnersTest.php
-:e! application/models/ExtraearnersTest.php
-:120,124t124
-:%s/\s\+$//g
-:e application/models/Groups/Peer.php
-:.,+4d
-:E 
-:112,125t.
-:112,124t124
-:112t124
-:109t.
-:14
-:101,106y
-:101,111y
-:e application/models/Vshop/Goods/Peer.php
-:48t71
-:74,79t68
-:379,388t388
-:368,370t378
-:18s/directory/ignore/g
-:18s/<\/\?\w\+/<\/ignore/g
-:18s/<\/?\w\+/<\/ignore/g
-:18s/<\w\+/<\/\?ignore/g
-:18s/<\w\+/<\/?ignore/g
-:18s/<\w\+/<ignore/g
-:18s/<\w\+/<ignore
-:18s/\w\+/ignore
-:12s/directory/ignore
-:12/directory/ignore
-:12/diractory/ignore
-:19,22y
-:e ../../../../application/models/Api/Keys/Peer.php
-:/datetime
-:e datetime
-:wbd
-:e ~/write-ups/protags.txt
-:sssssssssssssssssssssssssssssssssssssssssssssssssssssssssww3wx333333333333333333333333333d
-:77,87t87
-:59,67t67
-:14,15t16
-:38,42t55
-:e application/models/ShopGoods.php
-:set hidden
-:398,402t409
-:%redraw
-:q:Q
-:.,+5d
-:i
-:52,53m30
-:448t473
-:GBlame
-:155,159normal >>
-:156d
-:152,161d
-:Gb
-:e application/models/Messages/Peer.php
-:7d
-:40t7
-:24,.d
-:.,185d
-:e application/models/Offers.php
-:10
-:17
-:e t
-:e manage-shop-good.feature
-:!unit-tests %
-:643,645t653
-:G
-:.,.+2normal <<
-:164,167t120
-:172,185y
-:54,108t108
-:175,181t194
-:184,191t199
-:182t194
-:195,217d
-:175,194t194
-:175,204t204
-:225,236t236
-:%s/656/655/g
-:%s/656/655
-:e application/models/Emails/Factory.php
-:e application/models/Images/Peer.php
-:e application/models/Opportunities/Categories.php
-:'e application/models/Opportunities/Categories.php
-:'<,'>e application/models/Opportunities/Categories.php
+:%S/viv-55/viv-15
+:e Command.php
+:e ResponseAbstract.php
+:e ResponseAb
+:e %
+:e RequesterInterface.php
+:e RequestAbstract.php
+:.,18d
+:Wq
+:'<,'>q
+:!list-instances.sh
+:!%
+:qw
+:e /etc/hosts
+:hardcopy
+:e /home/ousmane/write-ups/server-setup.txt
 :e application/configs/application.development.ini
-:w]
-:e application/models/ShopGoods/Peer.php
-:'<,'>
-:w ~/lambeth-new-students.csv
-:%s/^| \(.*\)\ |$/\1/g
-:%s/^| \(.*\)\s\+|$/\1/g
-:%s/^| \(.*\) \s\+|$/\1/g
-:%s/^| \(.*\) |$/\1/
-:%s/^| \(.*\) |$/
-:13,14y
-:3,8y
-:33,35s/utf8_general_ci/latin1_swedish_ci
-:33,35s/utf8/latin1
-:36d
-:19,21t32
-:25,27s/utf8/latin1
-:24,27d
-:10,16t27
-:183,196y
-:e ../../../backend.vivo2.com2/tests/functional/features/bootstrap/FeatureContext.php
-:112,127y
-:e ../../../backend.vivo2.com2/tests/functional/features/bootstrap/TableContext.php
-:172,179t179
-:135,147d
-:144
-:135,146t146
-:40,52t52
-:89,98t98
-:69,78y
-:59,68y
-:49,58t58
-:49,57s/activ/deactiv/g
-:49,57s/Activ/Deactiv/g
-:39,48t48
-:29,38t38
-:87,98t98
-:72,85y
-:88
-:86,97y
-:44
-:44,54y
-:32
-:32,43y
-:240
-:240,247y
-:54
-:e ../backend.vivo2.com/tests/unit/application/models/Vshop/Goods/ManagerTest.php
-:55,71y
-:e Invocation/Static.php
-:e Invocation/Object.php
-:e Invocation.php
-:cd /usr/share/php/PHPUnit/Framework/MockObject/
-:573
-:%y
-:N
-:112,118s/status/result
-:324,333y
-:363,369d
-:166t151
-:310t333
-:308,309y
-:334,347d
-:230,235y
+:e %:h
+:e build.xml
+:%normal ==
+:296,311y
+:.,+4y
+:.,+5y
+:.,+5normal ==
+:.,+5==
+:.,+5=
+:.,+3normal ==
+:4t14
+:.,8t8
+:21,26y
+:.,13d
+:2,13d
+:25,33t33
+:24,33t 33
+:24,33t
+:16,24t24
+:9,13m21
+:9,13,21
+:9,13t -1
+:9,.t -1
+:9,.normal ==
+:x
+:x#
+:r ../backend.vivo2.com2/tests/unit/application/services/Vshop/GoodsTest.php
+:r ../backend.vivo2.com 
+:e application/models/Images/File/Mover.php
+:Gblame
+:Gblamme
+:q!
+:12d
+:136,155y
+:Wqq
+:wq#
+:Test
+:Tests
+:e ~/.vim/ftplugin/php.vim
+:wincmd
+:%d
+:233t239
+:359
+:530
+:528
+:e tests/unit/application/models/Vshop/Goods/ManagerTest.php
+:e tests/unit/application/models/Organisations/Budget/ManagerTest.php
+:538
+:19,35y
+:29,35y
+:29.35y
+:e behat.yml
+:%SubstituteCase/VME-710/VME-726
+:%SubstituteCase/VME-780/VME-710
+:%SubstituteCase/VME-710/VME-780
+:%SubstituteCase/vme-710/vme-780
+:%s/VME-761/VME-710
 :w:w
-:116,122t137
-:422d
-:432,433t422
-:410,420t420
-:399,409t409
-:389,398t398
-:514,524t524
-:503,513t513
-:e Ba
-:e %%h
-:e application/models/Offers/Organisations/Peer.php
-:312
-:644,653normal >>
-:48,58y
-:48,58s
-:'.
-:270
-:278
-:318y
-:276t285
-:270,330SubstituteCase/create/update/g
-:270,330SubstituteCase/create/update/gI
-:270/330s/create/update/gI
-:270/330substituteCase/create/update/g
-:270/330SubstituteCase/create/update/g
-:211,270t270
-:224d
-:212t224
-:211,222t222
-:i 
-:/estAddUserRoleDoesNothi
-:5,11
-:5m 11
-:11m5
-:%s/\(Auto-merging\)\{1\}.*\n\?/
-:%s/\n\?\(Auto-merging\)\{1\}.*\n\?/
-:%s/\n?\(Auto-merging\)\{1\}.*\n?/
-:%s/\(Auto-merging\)\{1\}.*\n/
-:%s/\(Auto-merging\){1}.*\n/
-:%s/\(Auto-merging\){1}\.*\n/
-:%s/\(Auto-merging\)\.*\n/
-:%s/\!\(CONFLICT\)\?/
-:%s/!\(CONFLICT\)\?/
-:%s/\(CONFLICT\)\?/
-:%s/\(CONFLICT\)?
-:%s/(CONFLICT)?
-:%s/CONFLICT
-:%s/\!CONFLICT
-:%s/!CONFLICT
-:11m2
-:7,8t2
-:9m0
-:9m1
-:9,1
-:5m11
-:5t11
+:e staging.yml
+:47,51t51
+:15,25t25
+:263
+:248,263t263
+:10,14t14
+:e ~/pool/start-terminals.sh
 :Q!
-:93,102d
-:93,102t113
-:85,89m66
-:67,96m112
-:186,237d
-:111,179t179
-:13,$d
-:1
-:11,13t6
-:9m4
-:8m3
-:8,3
-:Helptags t
-:HelpTags
-:3,7t72
-:68t78
-:69,71t79
-:69t62
-:32,36t2
-:3,7t47
-:36,40t41
-:3t31
-:2,3t50
-:24,28t29
-:6t39
-:15t26
-:15t20
-:6t14
-:2,6t31
-:7,30normal >>
-:19,23m0
-:19,23m1
-:15,18t19
-:16
-:10,13t14
-:e ../../../application/Bootstrap.php
-:e ../../../tests/integration/bootstrap/bootstrap.php
-:149
-:.,155normal<<
-:142,149m155
-:123,144d
-:160,.normal <<
-:123,144t159
-:77,111y
-:17,23d
-:68,73d
-:308,318d
-:304,318d
-:/create
-:w application/modules/admin/controllers/ShopController.php.edit
-:47,49t18
-:182,193d
-:178,182m188
-:139,148m136
-:181,184y
-:231
-:174
-:e application/models/Images/Type/GenericAbstract.php
-:e application/models/Images/Type/Oppcategories/Icon.php
-:e application/models/Images/Type/Abstract.php
-:e application/models/Images/Lookup.php
-:e application/models/Images/Type/Creator.php
-:/            $this->_imageManager = Application_Model_Images_Type_Creator::create(
-:e application/models/Images/Manager.php
-:/testGetOrganisationsList
-:/VIVO_SYSTEM_UPLOADS_IMAGES_PATH
+:'<,'>Q
+:set mouse=a
+:'<,'>
+:set mouse=
+:%normal v
+:e application/models/Organisations.php
 :e ap
-:20
-:/VIVO_UPLOADS_IMAGES_PATH
-:/apply
-:/app
+:E ap
+:102,111d
+:set paste
+:e application/models/Vshop/Goods/Vendors/Abstract.php
+:e tests/unit/application/models/Vshop/Goods/Vendors/AbstractTest.php
+:64
+:181
+:e application/models/Vshop/Goods/Suppliers/Abstract.php
+:e application/models/Vshop/Goods/Agents/ 
+:101,110t110
+:e application/models/Vshop/Goods.php
+:/testCallToMethodUndefinedInCurrentClassAndUndefinedInShopAgentIsProxiedToShopGood
+:e /usr/share/php/PHPUnit/TextUI/TestRunner.php
+:e application/models/Vshop/Goods/Peer.ph
+:e /usr/share/php/PHPUnit/TextUI/ResultPrinter.php
+:e /usr/share/php/PHPUnit/TextUI/*
+:e /usr/share/php/PHPUnit/Framework/TestListener.php
+:%s/$this->_budgetManager->/$this->getSUT()->/gc
+:550,563d
+:507,516t524
+:510,516d
+:/getNetAvailable
+:/currencies
+:e ../../../application/models/Organisations/Budget/Manager.php
+:18t34
+:19
+:1normal o
+:wqa
+:wa
+:14,16y
+:bufdo %s/s_Generic/s_Organisation/Ic
+:syntax on
+:bufdo %s/GenericTest /OrganisationTest /Ic
+:bufdo %s/Generic/Organisation/Ic
+:set hidden
+:23,25t12
+:714
+:356,367d
+:746,761d
+:e
+:43,52y
+:24,30t30
+:131,144t144
+:105,117t117
+:40
+:102
+:81
+:105,117y
+:43,56y
+:100,113t113
+:e ~/.bash_aliases
+:e 
+:%SubstituteCase/library/abstract/gc
+:bufdo %s/Vivo\\Test\\Unit/Vivo\\Tests\\Unit/
+:%s/Vivo\\Test\\Unit/Vivo\\Tests\\Unit/
+:%s/Vivo\\Test\\Unit/Vivo\Tests\Unit/
+:%s/Vivo\Test\Unit/Vivo\Tests\Unit/
+:209,321
+:24,52y
+:15,23y
+:%s/\s\+$//gc
+:177
+:bufdo normal /class Appwyiw/Application Reports testsCUnit Tests for class 0FTD
+:normal /class Appwyiw/Application Reports testsCUnit Tests for class 0FTD
+:normal /class Appwyiw/Application Reports testsCUnit Tests for class 0
+:normal /class Appwyiw/Application Reports testsC0
+:normal /class Appwyiw/Application Reports testsD p
+:normal /class Appwyiw/Application Reports testsDp
+:normal /class Appwyiw/Application Reports testsD
+:normal /class Appwyiw/Application Reports tests
+:normal /class Appwyiw?/\*\*j
+:normal /class Appwyiw?/\*\*
+:normal /class Appwyiw/?/\*\*
+:normal /class Appwyiw/?\*\*j
+:normal /class Appwyiw/\?\*\*j
+:normal /class Appwyiw/\/\*\*j
+:normal /class Appwyiw/\/\*\*
+:normal /class Appwyiw/\/**
+:normal /class Appwyiw/\/**
+:bufdo normal /class Appwyiw/\/**
+:bufdo normal /class Appwyiw/@coversWviwpFTD
+:bufdo :normal /class/
+:bdo
+:buffdo
+:buffdo :normal /class Appwyiw/@coversWviwpFTD
+:buffdo normal /class Appwyiw/@coversWviwpFTD
+:normal /class Appwyiw/@coversWviwpFTD
+:normal /class Appwyiw/@coversWviwpFTdw
+:normal /class Appwyiw/@covers/Wciw0FTdw
+:set nohl
+:hl off
+:hlsearch off
+:hlsearch of
+:normal /class Appwyiw/@covers/Wciw0FTdw
+:normal /class Appwyiw/@covers/Wciw0
+:normal /class Appwyiw/@covers/Wciw+
+:normal /class Appwyiw/@covers/W
+:normal /class Appwyiw/@covers/w
+:normal /class Appwyiw/@covers/
+:normal /class App/wyiw
+:%s/constant/define
+:normal /class App/wve
+:normal /class App/w
+:normal /class App/
+:normal /class App/
+:1normal <kDivide>\\/class App
+:1normal <kDivide>\/class App
+:1normal <kDivide>/class App
+:1normal <kDivide>class App
+:help substitute
+:%normal /class
+:13normal /class
+:normal /class
+:wall
+:.normal f,a 
+:55normal f,a 
+:41,45normal f,a 
+:4normal 3wciw test
+:1normal i<?php
+:1normal i<cr>
+:1normal o<cr>
+:4normal dd
+:1normal o<esc>
+:1normal o<esc>>
+:1normal i<CR>
+:1normal <CR>
+:1normal
+:12,22d
+:12,23d
+:12,24d
+:13,15d
+:13,16d
+:b
+:3,12y
+:n
+:e features/mgmt/shop/add-shop-good.feature
+:57
+:27t64
+:22,26t12
+::Q
+:13
+:%s/^$\n//gc
+:%s/^$//gc
+:%s/^\n$//gc
+:%s/^$//gc
+:%s/^$/gc
+:%s/^$/
+:s/^
+:Qa
+:vsp
 
 # Search String History (newest to oldest):
 ?/hide
@@ -918,6 +312,198 @@ $public
 ?/table
 ?/form
 ?/HEAD
+?/install
+?/composer
+?/reque
+?/request
+?/_pr
+?/_
+?/resp
+?/context
+?/new WidgetEvent
+?/widgetevent
+?/phpcs
+? ^$
+?/put
+?/getBeans
+?/getBeansTalkd
+?/writeT
+?/namev
+?/NameV
+?/httpd
+?/ech
+?/getFirstName
+? \v\C%(VIV-55|viv-55|Viv55)
+?/createFromA
+?/json
+?/setResponseF
+?/create
+?/invoke
+?/response
+?/factory
+?/payload
+?/>>
+?/installr
+?/migration
+?/143
+?/testing
+? \<www\>
+?/constant.VIVO_SYSTEM_STATIC_UPLOADS_PATH
+?/development
+?/VIVO_SYSTEM_UPLOADS_IMAGES_PATH
+?/A
+?/cp
+?/jenkins
+?/cache_dir
+?/cache
+?/options
+?/dro
+?/describ
+?/antcall
+?/staging
+?/current
+?/tests
+?/phpunit
+?/phpunitno
+?/unit-tests
+?/functional-tests
+? \<functional\>
+?/functional
+?/curr
+?/smoke-tests
+?/an
+?/smoke
+?/phpunitn
+?/unit-tests"
+?/unit
+?/unit-testing
+?/build
+?/HEAD
+?/build.log
+?/php
+?/php compos
+?/comp
+?/cpd
+?/bin
+?/ins
+? \s\+$
+?/markTest
+?/addOffer
+?/setTitle
+?/limit
+?/title
+?/session
+?/buildAndGetDe
+?/n move
+?/move
+?/login
+?/author
+?/tros
+?/trosh
+?/sh
+?/echo
+?/quiet-lint
+?/static-code
+?/budget
+?/.button
+?/findme
+?/Mock
+?/Application_Model_Curr
+?/currency
+?/currencyM
+? VME-710
+? VME-780
+? vme-710
+? VME-761
+?/staging-
+?/regress
+?/vivome-c
+?/isSchool
+?/isSy
+?/isSystem
+?/Proxied
+?/testCallT
+?/getShopGoodsI
+?/getShopGood
+?/getId
+?/getShop
+?/testCallToMethodUndefinedInCurrentClassAndUndefinedInShopAgentIsProxiedToShopGood
+? }
+?/testProcessIfOrderStatus
+?/addE
+? $this->_budgetManager->
+?/getTransactions
+? getNetAvailable
+?/getValidatedC
+??n
+?/currenciesM
+?/getTotalReserved
+?/organisation
+? currencies
+?/getNetAv
+?/Skip
+?/Ven
+? Generic
+?/Org
+?/generic
+? s_Generic
+?/gen
+? GenericTest 
+?/Gene
+?/GEne
+?/Application_Model_ImagesL
+?/Application_Model_ImagesLookup
+?/
+?/pplication_Model_ImagesLookup
+?/<<
+?/HERAD
+?/===
+?/====
+?/_findS
+?/findSUTS
+?/sutName
+?/getSUTN
+?/find
+?/setUp
+? library
+? Vivo\\Test\\Unit
+? Vivo\Test\Unit
+?/depends="prep
+?/Application Reports tests
+??/\*\*
+?/?/\*\*
+?/?\*\*
+?/\?\*\*
+?/\/\*\*
+?/\/**
+?/@covers
+?/class/
+?/@covers/
+?/fewfe
+?  
+?/class App/
+?/class Application_
+?/class
+?/TEST_
+?/reset
+?/r
+?/des
+?/da
+? ^$\n
+? ^$
+? ^\n$
+?/target
+?/ex
+?/mkd
+?/del
+?/ant
+?/current-f
+?/655
+?/manif
+?/include_path
+?/path
+?/table
+?/form
 ?/testGetIc
 ?/getUserOrg
 ?/fetch
@@ -926,6 +512,8 @@ $public
 ?/constant
 ?/$parameters
 ? \s\+$
+?/constant
+?/$parameters
 ?/phpmd-ci
 ?/featur
 ?/Feature
@@ -977,6 +565,8 @@ $public
 ? 4
 ? 84
 ?/login
+? 4
+? 84
 ?/getTest
 ?/clean
 ?/prepare
@@ -986,6 +576,7 @@ $public
 ?/build
 ?/pdf
 ?/unit
+?/pdf
 ?/phpdox
 ? source
 ? sourceType
@@ -1431,6 +1022,7 @@ $public
 ?/featured
 ?/toggl
 ?/togg
+?/to
 ?/Data
 ?/data
 ?/getShopG
@@ -1497,6 +1089,7 @@ $public
 ?/
 ?/getLinkByN
 ?/_
+?/getLinkByN
 ?/getRo
 ?/id
 ?/My shop g
@@ -1574,6 +1167,7 @@ $public
 ?/db
 ?/mys
 ?/getGroups
+?/addMess
 ?/preD
 ?/createShopGo
 ?/$test->
@@ -1614,1001 +1208,130 @@ $public
 ?/VIVO_UPLOAD_IMAGES_PATH
 ? apply
 ?/max_al
+?/orgs
+?/users
+?/3205
+? .*
+?/sendMessage
+?/SUCCESS
+?/null
+?//smoke
+?/filters
+?/getV
+?/getCategories
+?/inar
+?/notI
+? organisation_vshop
+?/setPerm
+?/hasPermission
+?/hasPerm
+?/setHas
+?/setPermission
+?/allo
+?/:q
+?/allowP
+?/isAllowed
+? Failure
+? Invalid
+?/getVshopGoodsM
+?/setVshopG
+?/_getAddShopGoods
+?/org
+?/user->g
+?/_setViewP
+?/getVshopG
+?/Manager
+?/Unable to ed
+?/Unable to
+? :qa
+?/render
+?/Form
+? PayLoad
+? deny
+?/getPerm
+?/setU
+?/setH
+?/Succesful
+?/checkPermission
+?/has
+?/aclP
+?/failure
+?/failureF
+?/failureForIn
+?/re
+?/acl
+?/I have r
+?/option for
+?/EDIT_
+?/CREATE_SAVE_TYPE
+?/ValidSav
+?/Unknow
+?/shopGoods
+?/updateShopGo
+?/updateSh
+?/classm
+?/markT
+?/getBalanceForCurr
+?/getBalance
+?/setBalance
+?/setBalanceM
+? testGetUserBalanceForDefault
+?/Default
+?/categor
+?/testcopy
+?/setUsersIdentifiersTypesId
+?/getByTypeName
+?/getByT
+?/getByTypeN
+?/setUsersIdentifiersTypes
+? addUser
+?/AddUser
+?/anyth
+?/fun
+?/widgets
+?/WidgetsA
+?/fgef
+?/getVi
+?/getFormated
+?/mocking prefixClose
 
 # Expression History (newest to oldest):
-=111*7
-=1*5
-=19144/2242
-=2242/19144
-=5+5
+=======
 
 # Input Line History (newest to oldest):
-@SetOrganisationsIdFailsWhenInvalidIdPassed
-@h2+ul>li*>a
-@div
-@h2
-@ul#context-menu>li*>a
-@li*>a
-@li>a*
-@li>a
-@r_repeat(0, $length -1), str_repeat(9, $length)
 
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	 "/www/vhosts/backend.vivopi.com/slim"
-"1	LINE	0
-	NameVirtualHost 172.31.1.143:80
-	<VirtualHost 172.31.1.143:80>
-	    DocumentRoot "/www/vhosts/backend.vivopi.com/public"
-	    ServerName ousmane.backend.vivopi.com
-	    <Directory "/www/vhosts/backend.vivopi.com/public">
-	        AllowOverride All
-	    </Directory>
-	</VirtualHost>
+""1	LINE	0
+	>>>>>>> a13e9e04dfcfe0229aa55377640261eb230d8e08
 "2	LINE	0
-	        RewriteRule ^.*$ index.php [NC,L]
+		+	8	14
 "3	LINE	0
-	        RewriteCond %{REQUEST_FILENAME} !-f
+		+	7	12
 "4	LINE	0
-	        RewriteEngine On
+		+	6	13
 "5	LINE	0
-	        RewriteRule ^ index.php [QSA,L]
+		+	9	0
 "6	LINE	0
-		    Options all
+		+	5	15
 "7	LINE	0
-	        Allow from all
+		.	8	14
 "8	LINE	0
-	        Order allow,deny
+		^	8	15
 "9	LINE	0
-	    AllowOverride All
-"a	CHAR	0
-	:€ku:€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€kd€ku:€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku
-"s	CHAR	0
-	quick-use
-"u	CHAR	0
-	u
-""-	CHAR	0
-	 
+		"	7	14
 
 # File marks:
-'O  1  2  /www/vhosts/backend.vivo2.com/application/models/Acl/Container.php
-'0  9  25  /etc/apache2/sites-available/backend.vivopi.com
-'1  1  8  /etc/apache2/sites-available/backend.vivopi.com
-'2  12  4  /etc/apache2/sites-available/backend.vivopi.com
-'3  3  20  /etc/resolv.conf
-'4  13  11  ~/.config/terminator/config
-'5  1  4  /etc/apache2/sites-available/backend.vivopi.com
-'6  35  69  /etc/apache2/apache2.conf
-'7  12  8  /etc/apache2/sites-available/backend.vivopi.com
-'8  480  18  /etc/php5/apache2/php.ini
-'9  1  8  /etc/apache2/sites-available/backend.vivopi.com
+'0  34  3  ~/git/vim/.vim/viminfo
 
 # Jumplist (newest first):
--'  9  25  /etc/apache2/sites-available/backend.vivopi.com
--'  11  13  /etc/apache2/sites-available/backend.vivopi.com
--'  1  8  /etc/apache2/sites-available/backend.vivopi.com
--'  12  4  /etc/apache2/sites-available/backend.vivopi.com
--'  3  20  /etc/resolv.conf
--'  1  0  /etc/resolv.conf
--'  13  11  ~/.config/terminator/config
--'  5  11  ~/.config/terminator/config
--'  1  0  ~/.config/terminator/config
--'  35  69  /etc/apache2/apache2.conf
--'  480  18  /etc/php5/apache2/php.ini
--'  219  35  /etc/php5/apache2/php.ini
--'  101  2  /etc/php5/apache2/php.ini
--'  96  2  /etc/php5/apache2/php.ini
--'  1  0  /etc/php5/apache2/php.ini
--'  10  0  /etc/apache2/sites-available/backend.vivo2.com
--'  21  10  /etc/hosts
--'  15  37  /etc/hosts
--'  13  46  /etc/hosts
--'  23  13  ~/.ssh/config
--'  14  25  ~/.ssh/config
--'  18  20  /etc/hosts
--'  1  0  /etc/hosts
--'  1  0  /etc/host
--'  2  0  /etc/profile.d/synergy.sh
--'  1  0  /etc/profile.d/synergy.sh
--'  409  52  /www/vhosts/backend.vivo2.com/library/Vivo/Migration/Manager.php
--'  410  12  /www/vhosts/backend.vivo2.com/library/Vivo/Migration/Manager.php
--'  414  21  /www/vhosts/backend.vivo2.com/library/Vivo/Migration/Manager.php
--'  416  0  /www/vhosts/backend.vivo2.com/library/Vivo/Migration/Manager.php
--'  427  1  /www/vhosts/backend.vivo2.com/library/Vivo/Migration/Manager.php
--'  413  12  /www/vhosts/backend.vivo2.com/library/Vivo/Migration/Manager.php
--'  1  37  /www/vhosts/backend.vivo2.com/library/Vivo/Migration/Manager.php
--'  58  23  /www/vhosts/backend.vivo2.com/library/Vivo/Tool/MigrationProvider.php
--'  56  22  /www/vhosts/backend.vivo2.com/library/Vivo/Tool/MigrationProvider.php
--'  1  0  /www/vhosts/backend.vivo2.com/library/Vivo/Tool/MigrationProvider.php
--'  1766  14  /etc/php5/cli/php.ini
--'  707  98  /etc/php5/cli/php.ini
--'  1  0  /etc/php5/conf.d/20-apc.ini
--'  40  29  /www/vhosts/backend.vivo2.com/application/configs/application.development.ini
--'  31  17  /www/vhosts/backend.vivo2.com/application/configs/application.development.ini
--'  1  21  ~/.zf.ini
--'  60  32  /www/vhosts/backend.vivo2.com/application/configs/application.development.ini
--'  1  0  /etc/php5/cli/php.ini
--'  56  0  ~/archives/.bashrc
--'  1  0  ~/archives/.bashrc
--'  1  0  ~/archives/.bash_functions
--'  1  0  ~/archives/.bash_aliases
--'  1  0  ~/archives/.bash_history
--'  1  0  ~/.gitconfig
--'  693  20  /www/vhosts/backend.vivo2.com/application/models/Vshop/Goods.php
--'  1  0  /www/vhosts/backend.vivo2.com/application/models/Vshop/Goods/Manager.php
--'  1  0  ~/test.txt
--'  376  0  /tmp/DroH3b_stylesheet.css
--'  1  0  /tmp/DroH3b_stylesheet.css
--'  31  30  /www/vhosts/backend.vivo2.com/vadminpublic/css/stylesheet.css
--'  26  1  /www/vhosts/backend.vivo2.com/vadminpublic/css/stylesheet.css
--'  239  4  /www/vhosts/backend.vivo2.com/vadminpublic/css/stylesheet.css
--'  283  45  /www/vhosts/backend.vivo2.com/application/forms/Vshop/Goods/Add.php
--'  281  67  /www/vhosts/backend.vivo2.com/application/forms/Vshop/Goods/Add.php
--'  284  70  /www/vhosts/backend.vivo2.com/application/forms/Vshop/Goods/Add.php
--'  240  4  /www/vhosts/backend.vivo2.com/vadminpublic/css/stylesheet.css
--'  237  19  /www/vhosts/backend.vivo2.com/vadminpublic/css/stylesheet.css
--'  236  25  /www/vhosts/backend.vivo2.com/vadminpublic/css/stylesheet.css
--'  115  14  /www/vhosts/backend.vivo2.com/vadminpublic/css/stylesheet.css
--'  111  16  /www/vhosts/backend.vivo2.com/vadminpublic/css/stylesheet.css
--'  2  0  /www/vhosts/backend.vivo2.com/vadminpublic/css/stylesheet.css
--'  1  0  /www/vhosts/backend.vivo2.com/vadminpublic/css/stylesheet.css
--'  217  8  /www/vhosts/backend.vivo2.com/tests/functional/features/bootstrap/VivomeContext.php
--'  1  0  /www/vhosts/backend.vivo2.com/tests/functional/features/bootstrap/VivomeContext.php
--'  301  0  /www/vhosts/backend.vivo2.com/application/models/Organisations/RolesGroups/Abstract.php
--'  1  0  /www/vhosts/backend.vivo2.com/application/models/Organisations/RolesGroups/Abstract.php
--'  1  0  /www/vhosts/backend.vivo2.com/application/configs/migrations/1371118793.php
--'  1366  0  /www/vhosts/backend.vivo2.com/application/services/Reward.php
--'  1253  8  /www/vhosts/backend.vivo2.com/application/services/Reward.php
--'  1  0  /www/vhosts/backend.vivo2.com/application/services/Reward.php
--'  42  8  /www/vhosts/backend.vivo2.com/application/models/Wall/Peer.php
--'  1  0  /www/vhosts/backend.vivo2.com/application/models/Wall/Peer.php
--'  743  8  /www/vhosts/backend.vivo2.com/application/models/Transactions/Peer.php
--'  1  0  /www/vhosts/backend.vivo2.com/application/models/Transactions/Peer.php
--'  483  8  /www/vhosts/backend.vivo2.com/application/models/ShopGoods/Peer.php
--'  1  0  /www/vhosts/backend.vivo2.com/application/models/ShopGoods/Peer.php
--'  534  8  /www/vhosts/backend.vivo2.com/application/models/RolesLookup/Peer.php
--'  1  0  /www/vhosts/backend.vivo2.com/application/models/RolesLookup/Peer.php
--'  609  8  /www/vhosts/backend.vivo2.com/application/models/Opportunities/Peer.php
--'  409  52  /www/vhosts/backend.vivo2.com/library/Vivo/Migration/Manager.php
--'  410  12  /www/vhosts/backend.vivo2.com/library/Vivo/Migration/Manager.php
--'  414  21  /www/vhosts/backend.vivo2.com/library/Vivo/Migration/Manager.php
--'  416  0  /www/vhosts/backend.vivo2.com/library/Vivo/Migration/Manager.php
--'  427  1  /www/vhosts/backend.vivo2.com/library/Vivo/Migration/Manager.php
--'  413  12  /www/vhosts/backend.vivo2.com/library/Vivo/Migration/Manager.php
--'  1  37  /www/vhosts/backend.vivo2.com/library/Vivo/Migration/Manager.php
--'  58  23  /www/vhosts/backend.vivo2.com/library/Vivo/Tool/MigrationProvider.php
--'  56  22  /www/vhosts/backend.vivo2.com/library/Vivo/Tool/MigrationProvider.php
+-'  34  3  ~/git/vim/.vim/viminfo
+-'  1  0  ~/git/vim/.vim/viminfo
 
 # History of marks within files (newest to oldest):
 
-> /etc/apache2/sites-available/backend.vivopi.com
-	"	9	25
-	^	11	14
-	.	9	25
-	+	1	0
-	+	1	24
-	+	1	45
-	+	1	75
-	+	1	73
-	+	1	108
-	+	1	25
-	+	1	22
-	+	1	25
-	+	13	13
-	+	1	54
-	+	1	22
-	+	1	16
-	+	1	13
-	+	1	4
-	+	1	0
-	+	1	0
-	+	1	4
-	+	1	52
-	+	1	3
-	+	1	0
-	+	12	21
-	+	12	8
-	+	1	0
-	+	12	21
-	+	12	0
-	+	12	0
-	+	1	0
-	+	1	0
-	+	11	0
-	+	1	0
-	+	9	25
-
-> /etc/resolv.conf
-	"	3	20
-
-> ~/.config/terminator/config
-	"	13	11
-
-> /etc/apache2/apache2.conf
-	"	35	69
-
-> /etc/php5/apache2/php.ini
-	"	480	18
-	^	480	19
-	.	480	18
-	+	480	18
-
-> /etc/apache2/sites-available/backend.vivo2.com
-	"	10	0
-
-> /etc/hosts
-	"	21	10
-	^	15	12
-	.	15	0
-	+	12	11
-	+	13	0
-	+	12	28
-	+	13	28
-	+	11	15
-	+	18	11
-	+	19	11
-	+	20	11
-	+	21	11
-	+	18	23
-	+	19	21
-	+	20	20
-	+	21	20
-	+	13	46
-	+	15	0
-
-> ~/.ssh/config
-	"	23	13
-	^	14	26
-	.	14	23
-	+	24	0
-	+	14	21
-	+	18	25
-	+	14	23
-
-> /etc/host
-	"	1	0
-
-> /etc/profile.d/synergy.sh
-	"	2	0
-	^	2	0
-	.	1	7
-	+	1	7
-
-> /www/vhosts/backend.vivo2.com/library/Vivo/Tool/MigrationProvider.php
-	"	58	23
-
-> /www/vhosts/backend.vivo2.com/library/Vivo/Migration/Manager.php
-	"	409	52
-	.	410	0
-	+	1	30
-	+	1	0
-	+	1	0
-	+	402	0
-	+	402	0
-	+	412	0
-	+	426	0
-	+	427	0
-	+	417	0
-	+	415	0
-	+	416	0
-	+	414	49
-	+	411	1
-	+	416	1
-	+	411	0
-	+	410	0
-	+	414	0
-	+	410	0
-
-> /www/vhosts/backend.vivo2.com/application/configs/migrations/1332333706.php
-	"	97	14
-	^	97	15
-	.	97	14
-	+	97	14
-
-> /etc/mysql/my.cnf
-	"	52	23
-	^	126	1
-	.	52	0
-	+	52	22
-	+	53	18
-	+	52	23
-	+	53	18
-	+	51	16
-	+	64	21
-	+	65	28
-	+	52	0
-
-> /etc/php5/cli/php.ini
-	"	1766	14
-	^	1766	15
-	.	1766	10
-	+	707	98
-	+	1767	0
-	+	1766	10
-
-> /etc/php5/conf.d/20-apc.ini
-	"	1	0
-	.	1	0
-	+	1	0
-
-> /www/vhosts/backend.vivo2.com/application/configs/application.development.ini
-	"	40	29
-	.	17	90
-	+	17	90
-
-> ~/.zf.ini
-	"	1	21
-	^	1	22
-	.	1	21
-	+	1	37
-	+	2	32
-	+	1	21
-
-> ~/archives/.bashrc
-	"	56	0
-
-> ~/archives/.bash_functions
-	"	1	0
-
-> ~/archives/.bash_aliases
-	"	1	0
-
-> ~/archives/.bash_history
-	"	1	0
-
-> ~/.gitconfig
-	"	1	0
-
-> /www/vhosts/backend.vivo2.com/application/models/Vshop/Goods.php
-	"	693	20
-
-> /www/vhosts/backend.vivo2.com/application/models/Vshop/Goods/Manager.php
-	"	1	0
-
-> ~/test.txt
-	"	1	0
-
-> /tmp/DroH3b_stylesheet.css
-	"	376	0
-
-> /www/vhosts/backend.vivo2.com/vadminpublic/css/stylesheet.css
-	"	378	0
-	^	44	30
-	.	44	29
-	+	238	0
-	+	237	0
-	+	238	0
-	+	239	0
-	+	241	0
-	+	241	0
-	+	238	0
-	+	240	0
-	+	41	4
-	+	39	4
-	+	43	24
-	+	44	29
-
-> /www/vhosts/backend.vivo2.com/application/forms/Vshop/Goods/Add.php
-	"	283	45
-	^	283	46
-	.	283	45
-	+	9	37
-	+	75	0
-	+	60	0
-	+	59	0
-	+	76	0
-	+	73	22
-	+	67	8
-	+	69	0
-	+	73	7
-	+	74	3
-	+	67	14
-	+	70	18
-	+	65	39
-	+	63	0
-	+	61	66
-	+	76	3
-	+	67	15
-	+	68	46
-	+	67	22
-	+	69	16
-	+	65	9
-	+	68	0
-	+	276	44
-	+	285	0
-	+	290	0
-	+	276	0
-	+	276	0
-	+	282	0
-	+	290	0
-	+	275	0
-	+	285	0
-	+	290	0
-	+	269	20
-	+	268	0
-	+	269	76
-	+	268	39
-	+	269	62
-	+	268	0
-	+	267	0
-	+	269	83
-	+	281	80
-	+	281	95
-	+	284	45
-	+	290	0
-	+	287	0
-	+	288	9
-	+	289	9
-	+	290	9
-	+	291	9
-	+	281	67
-	+	284	69
-	+	284	0
-	+	281	52
-	+	283	45
-
-> /www/vhosts/backend.vivo2.com/tests/functional/features/bootstrap/VivomeContext.php
-	"	217	8
-
-> /www/vhosts/backend.vivo2.com/application/models/Organisations/RolesGroups/Abstract.php
-	"	301	0
-
-> /www/vhosts/backend.vivo2.com/application/configs/migrations/1371118793.php
-	"	1	0
-
-> /www/vhosts/backend.vivo2.com/application/services/Reward.php
-	"	1366	0
-
-> /www/vhosts/backend.vivo2.com/application/models/Wall/Peer.php
-	"	42	8
-
-> /www/vhosts/backend.vivo2.com/application/models/Transactions/Peer.php
-	"	743	8
-
-> /www/vhosts/backend.vivo2.com/application/models/ShopGoods/Peer.php
-	"	483	8
-
-> /www/vhosts/backend.vivo2.com/application/models/RolesLookup/Peer.php
-	"	534	8
-
-> /www/vhosts/backend.vivo2.com/application/models/Opportunities/Peer.php
-	"	609	8
-
-> /www/vhosts/backend.vivo2.com/application/models/Opportunities/Lookup/Peer.php
-	"	202	8
-
-> /www/vhosts/backend.vivo2.com/application/models/Opportunities/Location/Lookup/Peer.php
-	"	69	8
-
-> /www/vhosts/backend.vivo2.com/application/models/Offers/Peer.php
-	"	293	8
-
-> /www/vhosts/backend.vivo2.com/application/models/Offers.php
-	"	18	8
-
-> /www/vhosts/backend.vivo2.com/application/models/Invites.php
-	"	341	8
-
-> /www/vhosts/backend.vivo2.com/application/models/Images/Peer.php
-	"	60	6
-	^	178	17
-	.	176	0
-	+	285	15
-	+	306	15
-	+	375	59
-	+	175	0
-	+	179	16
-	+	180	0
-	+	179	0
-	+	176	0
-
-> /www/vhosts/backend.vivo2.com/application/models/Fundraising/Transactions/Peer.php
-	"	78	8
-
-> /www/vhosts/backend.vivo2.com/application/models/Fundraising/Events/Peer.php
-	"	476	1
-
-> /www/vhosts/backend.vivo2.com/application/models/Fundraising/Events.php
-	"	508	8
-
-> /www/vhosts/backend.vivo2.com/application/models/Extraearners/Lookup/Peer.php
-	"	248	8
-
-> /www/vhosts/backend.vivo2.com/tests/integration/application/models/Opportunities/Categories/PeerTest.php
-	"	72	28
-	^	74	65
-	.	74	15
-	+	20	9
-	+	70	0
-	+	76	0
-	+	73	0
-	+	75	18
-	+	74	15
-
-> /www/vhosts/backend.vivo2.com/application/configs/application.ini
-	"	504	0
-	^	568	0
-
-> application/models/Opportunities/Categories.php
-	"	1	0
-
-> /www/vhosts/backend.vivo2.com/tests/integration/application/models/Opportunities/Categories/Lookup/PeerTest.php
-	"	69	52
-
-> /tmp/7SoTYa_Manager.php
-	"	1	0
-
-> /www/vhosts/backend.vivo2.com/application/models/ShopOrders/Csv/Manager.php
-	"	1	0
-	^	154	84
-	.	154	83
-	+	154	80
-	+	154	0
-	+	154	83
-
-> /tmp/hGW01c_Manager.php
-	"	2	0
-
-> /tmp/w19o4c_Categories.php
-	"	1	0
-
-> /www/vhosts/backend.vivo2.com/application/models/Opportunities/Categories.php
-	"	141	7
-	^	141	8
-	.	141	0
-	+	140	0
-	+	140	0
-	+	163	1
-	+	163	0
-	+	141	0
-
-> /www/vhosts/backend.vivo2.com/application/models/Opportunities/Categories/Peer.php
-	"	36	30
-
-> /www/vhosts/backend.vivo2.com/application/models/Images/Manager.php
-	"	214	0
-
-> /www/vhosts/backend.vivo2.com/application/models/Images/Type/Creator.php
-	"	42	9
-
-> /www/vhosts/backend.vivo2.com/application/models/Images/Lookup.php
-	"	239	0
-
-> /www/vhosts/backend.vivo2.com/application/models/Images/Type/Oppcategories/Icon.php
-	"	56	0
-
-> /www/vhosts/backend.vivo2.com/application/models/Images/Type/Abstract.php
-	"	231	5
-	.	19	0
-	+	19	31
-	+	19	31
-	+	19	0
-
-> /www/vhosts/backend.vivo2.com/application/models/Images/Type/GenericAbstract.php
-	"	231	0
-
-> /www/vhosts/backend.vivo2.com/db_load_data_jenkins.sh
-	"	4	87
-	^	4	88
-	.	4	87
-	+	4	87
-
-> /www/vhosts/backend.vivo2.com/tests/integration/application/services/OffersTest.php
-	"	23	64
-
-> /www/vhosts/backend.vivo2.com/tests/integration/application/models/ShopOrders/Csv/ManagerTest.php
-	"	111	0
-	.	111	0
-	+	111	0
-
-> tests/integration/application/models/ShopOrders/Csv/ManagerTest.php:tests/integration/application/models/ShopOrders/Csv/ManagerTest.php
-	"	1	0
-
-> /www/vhosts/backend.vivo2.com/phpunit.xml
-	"	40	53
-
-> /www/vhosts/backend.vivo2.com/build.xml
-	"	103	35
-	^	103	36
-	.	103	35
-	+	75	32
-	+	84	14
-	+	85	14
-	+	86	14
-	+	87	14
-	+	88	14
-	+	84	14
-	+	85	14
-	+	86	14
-	+	87	14
-	+	88	14
-	+	89	14
-	+	75	15
-	+	76	15
-	+	77	15
-	+	78	15
-	+	79	15
-	+	75	0
-	+	263	56
-	+	264	63
-	+	265	54
-	+	262	23
-	+	259	24
-	+	259	0
-	+	12	0
-	+	166	42
-	+	166	0
-	+	95	35
-	+	103	35
-
-> /tmp/vDUAphv/0.fugitiveblame
-	"	472	0
-
-> /www/vhosts/backend.vivo2.com/library/Vivo/Tool/PatchProvider.php
-	"	46	12
-
-> /www/vhosts/backend.vivo2.com/tests/functional/current-feature.yml
-	"	9	31
-	^	9	32
-	.	9	31
-	+	3	0
-	+	3	0
-	+	4	0
-	+	6	0
-	+	47	0
-	+	48	0
-	+	54	0
-	+	55	0
-	+	3	0
-	+	4	0
-	+	8	0
-	+	10	0
-	+	56	0
-	+	57	0
-	+	63	0
-	+	64	0
-	+	8	26
-	+	9	31
-
-> /www/vhosts/backend.vivo2.com/application/models/Acl/Container.php
-	"	371	20
-
-> /www/vhosts/backend.vivo2.com/tests/integration/application/models/Acl/ContainerTest.php
-	"	31	78
-	^	73	103
-	.	73	103
-	+	73	103
-
-> /www/vhosts/backend.vivo2.com/application/models/Acl/Peer.php
-	"	51	53
-	.	1	0
-	+	1	0
-
-> /www/vhosts/backend.vivo2.com/tests/functional/features/bootstrap/BaseContext.php
-	"	45	29
-
-> /www/vhosts/backend.vivo2.com/tests/functional/features/bootstrap/SubContext.php
-	"	1	0
-
-> /etc/apache2/sites-available/site.example.com.vhost
-	"	12	4
-	^	11	22
-	.	12	0
-	+	9	13
-	+	11	22
-	+	12	8
-	+	11	22
-	+	12	0
-
-> /www/vhosts/backend.vivo2.com2/insert.php
-	"	13	23
-	^	8	18
-	.	8	17
-	+	7	28
-	+	8	17
-
-> /www/vhosts/backend.vivo2.com2/config.php
-	"	4	31
-	^	4	32
-	.	4	31
-	+	2	0
-	+	4	30
-	+	5	27
-	+	4	31
-
-> /www/vhosts/backend.vivo2.com/build/phpmd.xml
-	"	10	29
-	^	10	30
-	.	10	29
-	+	1	0
-	+	9	42
-	+	10	29
-	+	10	31
-	+	10	7
-	+	10	42
-	+	10	4
-	+	10	0
-	+	10	29
-
-> /usr/share/php/data/PHP_PMD/resources/rulesets/codesize.xml
-	"	395	0
-
-> /usr/share/php/data/PHP_PMD/resources/rulesets/controversial.xml
-	"	144	0
-
-> /usr/share/php/data/PHP_PMD/resources/rulesets/design.xml
-	"	166	7
-
-> /usr/share/php/data/PHP_PMD/resources/rulesets/unusedcode.xml
-	"	73	0
-
-> /www/vhosts/backend.vivo2.com/application/tools/import_vivo1_shop_goods.php
-	"	1	0
-
-> /www/vhosts/backend.vivo2.com/import_vivo1_shop_goods.php
-	"	1	0
-
-> /www/vhosts/backend.vivo2.com/application/modules/admin/controllers/ShopController.php
-	"	100	50
-	^	100	51
-	.	100	50
-	+	77	0
-	+	80	0
-	+	79	8
-	+	80	0
-	+	76	0
-	+	117	0
-	+	118	0
-	+	119	0
-	+	120	0
-	+	121	0
-	+	122	0
-	+	125	0
-	+	120	62
-	+	115	34
-	+	121	33
-	+	151	34
-	+	155	31
-	+	75	21
-	+	117	0
-	+	187	51
-	+	188	0
-	+	155	28
-	+	183	29
-	+	193	0
-	+	197	70
-	+	161	0
-	+	158	0
-	+	158	75
-	+	158	91
-	+	158	93
-	+	161	0
-	+	158	94
-	+	160	0
-	+	186	0
-	+	187	15
-	+	188	3
-	+	189	3
-	+	190	14
-	+	192	0
-	+	183	23
-	+	155	19
-	+	151	12
-	+	115	12
-	+	197	62
-	+	120	54
-	+	151	71
-	+	71	0
-	+	121	31
-	+	151	23
-	+	121	19
-	+	197	31
-	+	197	0
-	+	197	74
-	+	197	76
-	+	78	52
-	+	115	89
-	+	117	0
-	+	114	0
-	+	110	26
-	+	110	41
-	+	111	6
-	+	112	61
-	+	113	0
-	+	150	0
-	+	146	35
-	+	147	6
-	+	146	36
-	+	148	66
-	+	149	0
-	+	146	24
-	+	115	32
-	+	78	28
-	+	84	0
-	+	89	23
-	+	85	14
-	+	103	30
-	+	197	24
-	+	91	0
-	+	91	0
-	+	197	0
-	+	103	56
-	+	109	7
-	+	127	0
-	+	128	21
-	+	133	107
-	+	103	71
-	+	121	25
-	+	164	0
-	+	151	30
-	+	139	61
-	+	170	102
-	+	173	61
-	+	177	38
-	+	197	0
-	+	197	0
-	+	100	43
-	+	98	0
-	+	91	0
-	+	99	0
-	+	100	50
-
-> /www/vhosts/backend.vivo2.com/application/modules/admin/controllers/ShopController.
-	"	1	0
-
-> /tmp/5HQ1Zb_ManagerTest.php
-	"	1	0
-
-> /www/vhosts/backend.vivo2.com/tests/unit/application/models/Organisations/Budget/ManagerTest.php
-	"	14	77
-	^	14	78
-	.	14	77
-	+	8	16
-	+	11	0
-	+	10	24
-	+	11	10
-	+	14	77
-
-> /usr/share/php/PHPUnit/Util/Test.php
-	"	291	27
-	.	594	0
-	+	594	16
-	+	582	13
-	+	594	0
-
-> /www/vhosts/backend.vivo2.com/library/Vivo/Test/GenericTestCase.php
-	"	69	0
-	^	193	21
-	.	193	20
-	+	116	18
-	+	110	0
-	+	107	24
-	+	108	6
-	+	109	0
-	+	116	0
-	+	125	0
-	+	116	0
-	+	326	128
-	+	326	0
-	+	116	0
-	+	116	18
-	+	118	4
-	+	118	29
-	+	118	0
-	+	115	25
-	+	116	0
-	+	113	15
-	+	125	0
-	+	114	0
-	+	113	29
-	+	168	18
-	+	171	16
-	+	168	18
-	+	171	0
-	+	168	87
-	+	168	30
-	+	135	4
-	+	134	79
-	+	168	0
-	+	134	79
-	+	135	0
-	+	163	55
-	+	165	53
-	+	168	27
-	+	168	47
-	+	198	4
-	+	195	30
-	+	197	56
-	+	197	56
-	+	198	0
-	+	197	20
-	+	168	57
-	+	168	82
-	+	170	8
-	+	169	89
-	+	164	0
-	+	165	58
-	+	166	8
-	+	165	0
-	+	167	0
-	+	165	0
-	+	168	0
-	+	168	95
-	+	168	0
-	+	164	50
-	+	168	99
-	+	169	84
-	+	169	0
-	+	165	72
-	+	164	12
-	+	195	44
-	+	171	0
-	+	131	0
-	+	128	82
-	+	129	6
-	+	130	0
-	+	141	0
-	+	138	35
-	+	139	6
-	+	138	55
-	+	140	21
-	+	144	12
-	+	145	3
-	+	146	43
-	+	147	42
-	+	150	8
-	+	149	24
-	+	148	41
-	+	152	0
-	+	151	0
-	+	165	0
-	+	169	42
-	+	186	41
-	+	188	0
-	+	171	0
-	+	160	0
-	+	156	82
-	+	157	6
-	+	159	0
-	+	159	76
-	+	173	0
-	+	176	38
-	+	158	0
-	+	159	0
-	+	174	28
-	+	194	0
-	+	191	79
-	+	192	6
-	+	193	20
-
-> /www/vhosts/backend.vivo2.com/library/Vivo/Validator.php
-	"	10	0
-
-> /www/vhosts/backend.vivo2.com/tests/unit/library/Vivo/ValidatorTest.php
-	"	7	24
-	^	7	25
-	.	7	24
-	+	7	24
-
-> /tmp/Rzczcd_GenericTestCase.php
-	"	1	0
-
-> /www/vhosts/backend.vivo2.com/tests/unit/application/models/Vshop/Goods/ValuesTest.php
-	"	10	46
-	^	10	47
-	.	10	46
-	+	10	46
-
-> /www/vhosts/backend.vivo2.com/tests/unit/library/Vivo/Cache/AbstractTest.php
-	"	12	29
-	^	12	30
-	.	12	29
-	+	12	29
-
-> /www/vhosts/backend.vivo2.com/tests/unit/library/Vivo/Cache/ManagerTest.php
-	"	14	28
-	^	14	29
-	.	14	28
-	+	14	28
+> ~/git/vim/.vim/viminfo
+	"	34	3
+	.	1298	0
+	+	1298	0

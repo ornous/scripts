@@ -27,7 +27,7 @@ au BufWritePost *.pl !chmod +x %
 
 au BufNewFile,BufRead  *.pls    set syntax=dosini
 au BufNewFile,BufRead  *.scss    set ft=scss.css
-:au! BufWritePost $MYVIMRC source $MYVIMRC 
+:au! BufWritePost $MYVIMRC source $MYVIMRC
 
 au FileType python set omnifunc=pythoncomplete#Complete
 au FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -65,6 +65,8 @@ au BufWinLeave * call clearmatches()
 inoremap <C-C> <ESC>:quit<CR>
 nnoremap <C-C> :quit<CR>
 vnoremap <C-C> :quit<CR>
+
+nnoremap <silent> <F3> :call <SID>StripTrailingWhitespaces()<CR>
 
 inoremap <C-B> <DSE>:BehatCmdToClipBoard<CR>
 nnoremap <C-B> :BehatCmdToClipBoard<CR>
@@ -111,15 +113,9 @@ set statusline+=\ [%{getcwd()}] " current dir
 set statusline+=%=%-14.(%l,%c%V%)\ %p%% " Right aligned file nav info
 
 if has('gui_running')
-    " let g:solarized_termcolors=16
-    " set t_Co=256
-    " set background=light
     colorscheme solarized
 else
-    "let g:solarized_termcolors=16
-    " set t_Co=256
     set background=dark
-    " colorscheme darkblue
 endif
 
 
@@ -133,6 +129,7 @@ set backup
 
 if has("autocmd")
   autocmd BufWritePre * let &backupext = substitute(expand('%:p:h'), '/', '%', 'g') . '~'
+  autocmd BufWritePre *models/*.php,*services/*.php :call <SID>StripTrailingWhitespaces()
 endif
 
 set directory=~/.vim/tmp/swap//
@@ -144,6 +141,18 @@ set undodir=~/.vim/tmp/undo//
 set undofile
 set undolevels=1000
 set undoreload=10000
+
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
 
 if has("autocmd")
   autocmd BufReadPost *
