@@ -19,8 +19,8 @@ $public
 # Command Line History (newest to oldest):
 :q
 :wq
-:v/^\([#/?]\|$\)/d
 :w
+:v/^\([#/?]\|$\)/d
 :1,8d
 :qa!
 :qa
@@ -1306,30 +1306,62 @@ $public
 ""1	LINE	0
 	>>>>>>> a13e9e04dfcfe0229aa55377640261eb230d8e08
 "2	LINE	0
-		+	8	14
+	=======
 "3	LINE	0
-		+	7	12
+	<<<<<<< HEAD
 "4	LINE	0
-		+	6	13
+	>>>>>>> a13e9e04dfcfe0229aa55377640261eb230d8e08
 "5	LINE	0
-		+	9	0
+	=======
 "6	LINE	0
-		+	5	15
+	            return g:vivo_project_path . "tests/" . l:file
 "7	LINE	0
-		.	8	14
+	        else
 "8	LINE	0
-		^	8	15
+	            return expand('%')
 "9	LINE	0
-		"	7	14
+	        if l:file =~ '^tests/.*'
 
 # File marks:
-'0  34  3  ~/git/vim/.vim/viminfo
+'0  1  0  ~/git/vim/.vim/.gitignore
+'1  28  0  ~/git/vim/.vim/ftplugin/php.vim
+'2  34  3  ~/git/vim/.vim/viminfo
 
 # Jumplist (newest first):
+-'  1  0  ~/git/vim/.vim/.gitignore
+-'  28  0  ~/git/vim/.vim/ftplugin/php.vim
+-'  1  0  ~/git/vim/.vim/ftplugin/php.vim
+-'  34  3  ~/git/vim/.vim/viminfo
+-'  1  0  ~/git/vim/.vim/viminfo
+-'  34  3  ~/git/vim/.vim/viminfo
+-'  1  0  ~/git/vim/.vim/viminfo
+-'  34  3  ~/git/vim/.vim/viminfo
+-'  1  0  ~/git/vim/.vim/viminfo
+-'  34  3  ~/git/vim/.vim/viminfo
+-'  1  0  ~/git/vim/.vim/viminfo
+-'  28  0  ~/git/vim/.vim/ftplugin/php.vim
+-'  1  0  ~/git/vim/.vim/ftplugin/php.vim
+-'  34  3  ~/git/vim/.vim/viminfo
+-'  1  0  ~/git/vim/.vim/viminfo
+-'  34  3  ~/git/vim/.vim/viminfo
+-'  1  0  ~/git/vim/.vim/viminfo
+-'  34  3  ~/git/vim/.vim/viminfo
+-'  1  0  ~/git/vim/.vim/viminfo
 -'  34  3  ~/git/vim/.vim/viminfo
 -'  1  0  ~/git/vim/.vim/viminfo
 
 # History of marks within files (newest to oldest):
+
+> ~/git/vim/.vim/.gitignore
+	"	1	0
+
+> ~/git/vim/.vim/ftplugin/php.vim
+	"	28	0
+	.	29	0
+	+	17	0
+	+	22	0
+	+	28	0
+	+	29	0
 
 > ~/git/vim/.vim/viminfo
 	"	34	3
