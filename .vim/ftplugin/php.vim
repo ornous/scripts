@@ -14,13 +14,15 @@ function! VivoTestsCallback(args)
     if len(l:args) is 0
         let l:file = expand('%')
         let l:file = substitute(expand('%'), '^' . g:vivo_project_path . '\(.*\)$', "\\1", '')
+        let l:file = substitute(expand('%'), '\(.*\).php$', "\\1Test.php", '')
         if l:file =~ '^tests/.*'
             return expand('%')
         else
-            return g:vivo_project_path . "tests/" . l:file
+            return g:vivo_project_path . "tests/unit/" . l:file
         endif
     endif
 endfunction
 
 " print expand('%')
 " print substitute(expand('%'), '^/www/vhosts/backend.vivo2.com/\(.*\)$', '\1', '');
+autocmd FileType php set commentstring=#\ %s
