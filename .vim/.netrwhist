@@ -1,6 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/www/vhosts/backend.vivo2.com/.git/info'
-let g:netrw_dirhist_2='/www/vhosts/backend.vivo2.com/build'
-let g:netrw_dirhist_3='/www/frameworks/ZendFramework/ZendFramework-1.11.11/library/Zend/Filter/Word/Separator'
-let g:netrw_dirhist_4='/home/ousmane/write-ups'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/www/vhosts/backend.vivopi.com/config'
+let g:netrw_dirhist_2='/www/vhosts/backend.vivopi.com/build'
+let g:netrw_dirhist_3='/www/vhosts/backend.vivopi.com/vendor/theseer/fxsl/.git'
+let g:netrw_dirhist_4='/www/vhosts/backend.vivopi.com/module/Vivo/config'
+let g:netrw_dirhist_5='/www/vhosts/backend.vivopi.com/tests/unit'
+let g:netrw_dirhist_6='/www/vhosts/vivopi-chef/_incoming'
+let g:netrw_dirhist_7='/www/vhosts/frontend.vivopi.com/test'
+let g:netrw_dirhist_8='/www/vhosts/backend.vivopi.com/vendor/zendframework/zendframework/library/Zend/Mvc'
